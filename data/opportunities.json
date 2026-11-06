@@ -1,0 +1,4116 @@
+[
+    {
+      "id": "frank-matthews-ii-49-center-for-career-development-summer-internship-grant",
+      "isMock": false,
+      "name": "Frank Matthews II ‘49 Center for Career Development Summer Internship Grant",
+      "type": "grant",
+      "description": "The Matthews Center Summer Internship Grant assists students with cost-of-living expenses while they participate in unpaid or low-paying summer internships. Grants are available in $1,000 -$6,000 amounts. To be considered for any of the individual named grants, students and internships must meet the same requirements listed for the Matthews Center for Career Development Summer Internship Grant along with any additional requirements for that particular grant.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer"
+      ],
+      "themes": [],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-04",
+          "text": "2/4/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "anne-stanback-81-and-charlotte-kinlock-internship-for-non-profit-leadership",
+      "isMock": false,
+      "name": "Anne Stanback ’81 and Charlotte Kinlock Internship for Non-profit Leadership",
+      "type": "grant",
+      "description": "Established by Anne Stanback, Class of 1981, and her wife, Charlotte Kinlock, this internship provides assistance for students, preferably from historically underrepresented populations, who have demonstrated financial need and are pursuing an internship with a 501(c)(3) or 501(c)(4) non-profit organization.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Non-profit",
+        "Students with financial need"
+      ],
+      "themes": [
+        "social impact",
+        "community",
+        "service"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant. Demonstrated financial need; preferably students from historically underrepresented populations."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Preferably for students from historically underrepresented populations",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "bill-boyd-entrepreneurial-internship-grant",
+      "isMock": false,
+      "name": "Bill Boyd Entrepreneurial Internship Grant",
+      "type": "grant",
+      "description": "The Bill Boyd Entrepreneurial Internship Grant supports students pursuing internships with organizations of an entrepreneurial mindset, in particular, opportunities in business, sales or leadership with small- to medium-sized companies. The internship must be completed with a small- to medium-sized entrepreneurial organization, specifically in the realms of business, sales or leadership.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Entrepreneurship/innovation"
+      ],
+      "themes": [
+        "startup",
+        "business",
+        "innovation",
+        "venture"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "boswell-family-experiential-learning-grant",
+      "isMock": false,
+      "name": "Boswell Family Experiential Learning Grant",
+      "type": "grant",
+      "description": "The Boswell Family Experiential Learning Grant supports outstanding students in the pursuit of hands-on experiences that will contribute to their overall professional development and understanding of the corporate / business world. Award recipients may pursue developmental experiences such as professional internships or high-impact certification programs that deliver tangible career development through leaders in the field. The internship should be focused in fields such as investment banking, investment management, private equity, venture capital, entrepreneurship, management consulting, accounting, corporate finance and / or operations, or another similarly tangible business application. High-impact certification programs that deliver tangible career development through leaders in the field are also eligible.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Personal/professional development",
+        "Entrepreneurship/innovation",
+        "Finance"
+      ],
+      "themes": [
+        "career",
+        "conference",
+        "training",
+        "certification",
+        "startup",
+        "business",
+        "innovation",
+        "venture",
+        "economics",
+        "money"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "boyd-family-internship-grant",
+      "isMock": false,
+      "name": "Boyd Family Internship Grant",
+      "type": "grant",
+      "description": "Established by Maurya MacNeil Boyd, Class of 1987, and Bob Boyd, Class of 1988, the Boyd Family Internship Grant assists students who are participating in unpaid or low-paying internships with a focus on education, public service or civic engagement.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Civic/service/community engagement",
+        "Summer",
+        "Public service/politics"
+      ],
+      "themes": [
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "government",
+        "policy",
+        "politics",
+        "social justice"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "dr-randy-nelson-summer-internship-grant",
+      "isMock": false,
+      "name": "Dr. Randy Nelson Summer Internship Grant",
+      "type": "grant",
+      "description": "The Dr. Randy Nelson Summer Internship Grant was established by former students and friends of Dr. Randy Nelson to honor his significant contributions to the College, the internship fund supports Davidson students pursuing summer internships in the visual, literary and performing arts.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Arts"
+      ],
+      "themes": [
+        "creative",
+        "design",
+        "visual culture",
+        "music",
+        "theatre",
+        "film",
+        "writing"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "gerald-lee-wilson-58-and-virginia-s-wilson-internship-fund-grant",
+      "isMock": false,
+      "name": "Gerald Lee Wilson '58 and Virginia S. Wilson Internship Fund Grant",
+      "type": "grant",
+      "description": "The Gerald Lee Wilson '58 and Virginia S. Wilson Internship Fund Grant supports students exhibiting financial need in their pursuit of internships that are consistent with their career interests. Priority is given to students demonstrating financial need.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Students with financial need"
+      ],
+      "themes": [],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant. Priority is given to students demonstrating financial need."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "ginny-newell-78-arts-fund",
+      "isMock": false,
+      "name": "Ginny Newell '78 Arts Fund",
+      "type": "grant",
+      "description": "The Ginny Newell ‘78 Arts Fund enables students to broaden their horizons—both physically and intellectually—through summer internships in the study of and/or support of the visual arts, beyond the scope of North Carolina or their hometown.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Arts"
+      ],
+      "themes": [
+        "creative",
+        "design",
+        "visual culture",
+        "music",
+        "theatre",
+        "film",
+        "writing"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Requires students to explore \"beyond the scope of North Carolina or their hometown.\"",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "hall-family-internship-grants",
+      "isMock": false,
+      "name": "Hall Family Internship Grants",
+      "type": "grant",
+      "description": "The Hall Family Internship Grants assist students who are participating in unpaid or low-paying internships with organizations of entrepreneurial mindsets or those that are focused on community and social service.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Civic/service/community engagement",
+        "Summer",
+        "Entrepreneurship/innovation"
+      ],
+      "themes": [
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "startup",
+        "business",
+        "innovation",
+        "venture"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "hasty-smith-internship-grant",
+      "isMock": false,
+      "name": "Hasty/Smith Internship Grant",
+      "type": "grant",
+      "description": "Established by Andrew Smith, Class of 1980, and Lisa Hasty, Class of 1981, this grant provides assistance for students pursuing internships or fellowships through the Matthews Center for Career Development.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer"
+      ],
+      "themes": [],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "janet-burt-anderson-first-generation-internship-fund",
+      "isMock": false,
+      "name": "Janet Burt Anderson First-generation Internship Fund",
+      "type": "grant",
+      "description": "Established by Joseph and Nancy Craven, in memory of Nancy’s immigrant grandmother, and in recognition of the challenges that first-generation students face, this fund provides assistance for students who seek summer internships and are the first members of their families to attend a four-year college or university.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "First-generation students"
+      ],
+      "themes": [],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant. For the first members of their families to attend a four-year college or university."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "juliana-tazewell-porter-memorial-internship-fund",
+      "isMock": false,
+      "name": "Juliana Tazewell Porter Memorial Internship Fund",
+      "type": "grant",
+      "description": "The Juliana Tazewell Porter Memorial Internship Fund assists outstanding Davidson students, with priority given to student-athletes, pursuing summer internships in the medical or another healthcare-related field.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Medical/healthcare",
+        "Scholar-athletes"
+      ],
+      "themes": [
+        "health",
+        "medicine",
+        "public health"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant. Priority is given to student-athletes."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "layendecker-family-internship-fund",
+      "isMock": false,
+      "name": "Layendecker Family Internship Fund",
+      "type": "grant",
+      "description": "Established in honor of Katherine Layendecker, Class of 2015, the first graduate of the Gender and Sexuality Studies Program and recipient of the Sally G. McMillen Prize for her honors thesis, to honor and advance her passion for public service, social justice and human and civil rights, this fund provides financial assistance to students who are participating in unpaid or low-paying internships related to gender and sexuality issues or to help fund summer research in gender and sexuality issues.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Research",
+        "Summer",
+        "Gender and sexuality topics"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "gender",
+        "sexuality",
+        "social justice",
+        "human rights"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "locke-white-jr-internship-fund",
+      "isMock": false,
+      "name": "Locke White Jr. Internship Fund",
+      "type": "grant",
+      "description": "Established anonymously in memory of Professor Locke White Jr., Class of 1939, for student internships with a preference for students pursuing careers in science, technology, or medicine.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Medical/healthcare",
+        "STEM"
+      ],
+      "themes": [
+        "health",
+        "medicine",
+        "public health",
+        "science",
+        "technology",
+        "data",
+        "engineering",
+        "math"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant. Preference for students pursuing careers in science, technology, or medicine."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "macdonald-family-internship-grant",
+      "isMock": false,
+      "name": "MacDonald Family Internship Grant",
+      "type": "grant",
+      "description": "The MacDonald Family Internship Grant supports students pursuing summer internships that are consistent with their career interests. Summer research experiences do not qualify.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer"
+      ],
+      "themes": [],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "morehead-family-internship-grant",
+      "isMock": false,
+      "name": "Morehead Family Internship Grant",
+      "type": "grant",
+      "description": "Established by Cindy and Richard ‘Dick’ H. Morehead, Class of 1956, this fund supports high-impact summer internships in a broad scope of industries.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer"
+      ],
+      "themes": [],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "pioneer-internship-fund",
+      "isMock": false,
+      "name": "Pioneer Internship Fund",
+      "type": "grant",
+      "description": "This fund was established by women from the Class of 1977 (the first four-year class that included women at Davidson), and it was created in 2023 to commemorate the 50th anniversary of coeducation at Davidson. This fund provides assistance for students with financial need who engage in internships, with a preference for those who seek internships in non-profit or governmental organizations.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Non-profit",
+        "Public service/politics",
+        "Students with financial need"
+      ],
+      "themes": [
+        "social impact",
+        "community",
+        "service",
+        "government",
+        "policy",
+        "politics",
+        "social justice"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant. Students with financial need; preference for internships in non-profit or governmental organizations."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "the-cassell-family-socios-en-salud-partners-in-health-in-peru-internship",
+      "isMock": false,
+      "name": "The Cassell Family Socios En Salud / Partners in Health in Peru Internship",
+      "type": "grant",
+      "description": "The Cassell Family Socios En Salud / Partners in Health in Peru Internship Fund, created by Ralph and Gail Cassell supports students each summer to work with Partners in Health in Lima, Peru. The internship goal is to provide an intensive civic-engagement and global health experience that seeks to develop citizens and innovators who can build effective responses to disease and poverty and learn about the health system and interventions in vulnerable populations. The fund provides $6,000 to cover the selected student’s round-trip travel and living expenses for a minimum of 10 weeks. This internship grant is designated for students interning with Partners in Health in Lima, Peru.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Language or region specific",
+        "International experience",
+        "Summer",
+        "Medical/healthcare"
+      ],
+      "themes": [
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad",
+        "health",
+        "medicine",
+        "public health"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 6000,
+        "max": 6000,
+        "text": "$6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "tom-anstrom-internship-fund",
+      "isMock": false,
+      "name": "Tom Anstrom Internship Fund",
+      "type": "grant",
+      "description": "Established in memory of Tom Anstrom ’04, The Tom Anstrom Internship Fund has been endowed by Tom’s classmates, friends, and family to honor and advance his passion for public service, social justice, and human and civil rights. Through his life and work in Washington, DC, and the Hampton Roads area of Virginia, Tom gained an appreciation for how progressive efforts in politics could make a positive difference. The Tom Anstrom Internship Fund Grant supports students pursuing internships in progressive public policy, politics, or social justice. The internships must also meet the following requirements. Internships should be with government agencies, non-governmental organizations (NGOs), political offices or campaigns for candidates whose work and missions reflect progressive public policy and social justice. Work performed must be high quality with clearly defined roles and responsibilities, and supervised by a professional who provides regular feedback. The work should offer students the ability to complete 300 hours during the summer prior to the start of the next academic term. A cover letter needs to be submitted with application.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Public service/politics"
+      ],
+      "themes": [
+        "government",
+        "policy",
+        "politics",
+        "social justice"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Students and internships must also meet the requirements listed for the Matthews Center for Career Development Summer Internship Grant."
+      },
+      "awardAmount": {
+        "min": 1000,
+        "max": 6000,
+        "text": "$1,000 - $6,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Priority",
+          "date": "2025-02-24",
+          "text": "2/24/2025"
+        },
+        {
+          "label": "Regular decision",
+          "date": "2025-04-01",
+          "text": "4/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/matthews-center-career-development/key-programming/internships/summer-internship-grants/available-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "kathryn-w-davis-projects-for-peace-grant",
+      "isMock": false,
+      "name": "Kathryn W. Davis Projects for Peace Grant",
+      "type": "grant",
+      "description": "Projects for Peace encourages student initiative, innovation, and entrepreneurship focusing on conflict prevention, resolution, or reconciliation. With this grant, students or groups of students can apply for a $10,000 grant to support projects that promote peace and address the root causes of conflict among parties.",
+      "office": "The Center for Civic Engagement",
+      "tags": [
+        "Project/experiential learning",
+        "Civic/service/community engagement",
+        "International experience",
+        "Summer",
+        "Entrepreneurship/innovation"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad",
+        "startup",
+        "business",
+        "innovation",
+        "venture"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": 10000,
+        "max": 10000,
+        "text": "$10,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-01-21",
+          "text": "1/21/2025 at 8:00am"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/civic-engagement/grants-and-funding-opportunities/kathryn-w-davis-projects-peace-grant",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "International experience is not required, but all past examples on the site are outside the U.S.",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "leonard-fund-grant",
+      "isMock": false,
+      "name": "Leonard Fund Grant",
+      "type": "grant",
+      "description": "Supported by Paul '62 and Judy Leonard, the Leonard Fund Grant supports Davidson College students' summer service projects, community internships, service travel, or community project development. The grant currently provides up to $3,500 in funds to support summer internships, projects, or experiences.",
+      "office": "The Center for Civic Engagement",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Civic/service/community engagement",
+        "Summer"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "service",
+        "community",
+        "volunteering",
+        "social impact"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 3500,
+        "text": "Up to $3,500",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Early",
+          "date": "2025-02-23",
+          "text": "2/23/2025 at 11:59pm"
+        },
+        {
+          "label": "Final",
+          "date": "2025-03-31",
+          "text": "3/31/2025 at 11:59pm"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/civic-engagement/grants-and-funding-opportunities/leonard-fund",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "robert-t-stone-fund",
+      "isMock": false,
+      "name": "Robert T. Stone Fund",
+      "type": "grant",
+      "description": "Established in memory of Robert Stone, the Robert T. Stone Fund provides Davidson College students with the opportunity to design environmental service projects that combine academic and personal interests. The grant currently provides up to $5,000 in funds to support summer internships, projects, or experiences.",
+      "office": "The Center for Civic Engagement",
+      "tags": [
+        "Project/experiential learning",
+        "Civic/service/community engagement",
+        "Summer",
+        "Environmental"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "sustainability",
+        "climate",
+        "nature"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 5000,
+        "text": "Up to $5,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Early",
+          "date": "2025-02-23",
+          "text": "2/23/2025 at 11:59pm"
+        },
+        {
+          "label": "Final",
+          "date": "2025-03-31",
+          "text": "3/31/2025 at 11:59pm"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/civic-engagement/grants-and-funding-opportunities/robert-t-stone-fund",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "ruth-pittard-fund-for-love-in-action",
+      "isMock": false,
+      "name": "Ruth Pittard Fund for Love In Action",
+      "type": "grant",
+      "description": "The Ruth Pittard Fund for Love In Action supports Davidson College students pursuing meaningful summer experiences that honor Ruth’s values of collaboration, community building, participation, service, integrity, and love. The grant currently provides up to $5,000 in funds to support summer internships, projects, or experiences. Students who need funding to fulfill their dreams of helping others create a more humane world are encouraged to apply.",
+      "office": "The Center for Civic Engagement",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Civic/service/community engagement",
+        "Summer"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "service",
+        "community",
+        "volunteering",
+        "social impact"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 5000,
+        "text": "Up to $5,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": "Early",
+          "date": "2025-02-23",
+          "text": "2/23/2025 at 11:59pm"
+        },
+        {
+          "label": "Final",
+          "date": "2025-03-31",
+          "text": "3/31/2025 at 11:59pm"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/civic-engagement/grants-and-funding-opportunities/ruth-pittard-fund-love-action",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "heitz-wagener-study-abroad-scholarship",
+      "isMock": false,
+      "name": "Heitz-Wagener Study Abroad Scholarship",
+      "type": "scholarship",
+      "description": "This scholarship was established by Debbie Heitz and Shaw Wagener in honor of their son Harrison ’18. It is awarded to outstanding sophomores and juniors receiving need-based aid who choose to study abroad in the spring semester. Provides a $1,500 travel allowance to be used after the end of the study abroad program. Stipends are intended to support additional travel that adds value to a student experience abroad. Funds may be used only for travel at the conclusion of the program or during official breaks in the program (e.g., spring break). Funds may not be used for travel that conflicts with activities or excursions organized by the program; and funds may not be used to pay study abroad program fees or to pay for travel between the U.S. and the study abroad destination. Each spring semester, the committee will award 2-4 stipends of $1,500 each. Applicants can expect to hear if they are selected as a grant recipient by mid-November following the Off-Campus Study Notification deadline.",
+      "office": "Office of Education Abroad",
+      "tags": [
+        "International experience",
+        "Academic term",
+        "International students"
+      ],
+      "themes": [
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": [
+          "sophomore",
+          "junior"
+        ],
+        "notes": "Outstanding sophomores and juniors receiving need-based aid who study abroad in the spring semester."
+      },
+      "awardAmount": {
+        "min": 1500,
+        "max": 1500,
+        "text": "$1,500",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Application is included in all spring semester and academic year study abroad applications."
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/education-abroad/scholarships-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Available to 2-4 students each spring semester; intended solely for personal travel following the conclusion of a spring semester study abroad program.",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "bertis-e-downs-iii-and-eugene-m-downs-sr-education-abroad-fund",
+      "isMock": false,
+      "name": "Bertis E. Downs III and Eugene M. Downs, Sr. Education Abroad Fund",
+      "type": "grant",
+      "description": "Established by Bertis E. Downs IV, Class of 1978, in memory of his father, Bertis E. Downs III, Class of 1953, and uncle, Eugene M. Downs Sr., this fund is in support of academic study abroad experiences for students with demonstrated financial need. In order to apply, students must be applying for a credit-bearing program during the summer term, receive need-based financial aid, and not have previously studied abroad for academic credit. Priority will be given to applicants for whom summer is the only time they are able to study abroad (as explained in the application). Each summer, the committee will award 1-2 stipend(s) of typically $2,000 each. Applicants can expect to hear if they are selected as a grant recipient by March 15.",
+      "office": "Office of Education Abroad",
+      "tags": [
+        "International experience",
+        "Credit-bearing opportunity",
+        "Students with financial need"
+      ],
+      "themes": [
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Must be applying for a credit-bearing summer program, receive need-based financial aid, and not have previously studied abroad for academic credit."
+      },
+      "awardAmount": {
+        "min": 2000,
+        "max": 2000,
+        "text": "$2,000",
+        "notes": "Typically $2,000 per stipend"
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Application is included in all summer study abroad applications."
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/education-abroad/scholarships-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Available to up to 2 students each summer; intended for students who have no prior study abroad experience and who can only study abroad over the summer term.",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "stephen-w-keller-memorial-scholarship",
+      "isMock": false,
+      "name": "Stephen W. Keller Memorial Scholarship",
+      "type": "scholarship",
+      "description": "Established in memory of Stephen W. Keller ‘94 by his friends and admirers, this fund provides support for students taking advantage of credit-bearing study abroad experiences during their time at Davidson, with a preference for students studying in either Germany or Greece. The recipient must use the grant to undertake at least four weeks of independent experiential study, travel, and engagement with local culture in Greece and/or Germany. Funds may not be used for travel that conflicts with activities or excursions organized by the program; and funds may not be used to pay study abroad program fees or to pay for travel between the U.S. and the study abroad destination. The recipient must correspond with the Keller family before and after the scholarship period. Ideally the recipient will visit with the Keller family in Xanthi, Greece. The recipient must accept the grant award only in a spirit of commitment to mutual international understanding and engagement between Davidson College and the wider world, such as that which was embodied by Stephen Keller in his life.",
+      "office": "Office of Education Abroad",
+      "tags": [
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Application is included in all spring semester and academic year study abroad applications"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/keller-scholarship",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Lacking details",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "dean-rusk-research-grant",
+      "isMock": false,
+      "name": "Dean Rusk Research Grant",
+      "type": "grant",
+      "description": "A Dean Rusk Research Grant is defined as a systematic inquiry that is designed to discover and interpret new information.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Research",
+        "International experience"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025"
+        }
+      ],
+      "applicationSteps": [
+        "Consult with the Dean Rusk office to discuss your project proposal.",
+        "Obtain a faculty recommender.",
+        "If applicable, obtain a language proficiency recommender (required where English is not the predominant language in the country for your proposed project).",
+        "Submit your IRB application one calendar week before the Dean Rusk application deadline.",
+        "Write a proposal.",
+        "Complete travel grant budget report."
+      ],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/dean-rusk-travel-grants/research-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "dean-rusk-exploratory-and-reflective-learning-grant",
+      "isMock": false,
+      "name": "Dean Rusk Exploratory and Reflective Learning Grant",
+      "type": "grant",
+      "description": "A Dean Rusk Exploratory and Reflective Learning Grant is defined as the exploration of and reflection on international experiences that enhance academic goals and encourage personal growth. It is strongly recommended students also obtain a faculty recommendation, but it is NOT required.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Project/experiential learning",
+        "International experience"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025"
+        }
+      ],
+      "applicationSteps": [
+        "Consult with the Dean Rusk office to discuss your project proposal.",
+        "Write a proposal.",
+        "Complete travel grant budget report.",
+        "If applicable, obtain a language proficiency recommender (required where English is not the predominant language in the country for your proposed project)."
+      ],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/dean-rusk-travel-grants/exploratory-and-reflective-learning-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "dean-rusk-service-grant",
+      "isMock": false,
+      "name": "Dean Rusk Service Grant",
+      "type": "grant",
+      "description": "A Dean Rusk Service Grant is defined as the participation in activities that help or support international initiatives. This grant can include internships. It is strongly recommended students also obtain a faculty recommendation, but it is NOT required.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Civic/service/community engagement",
+        "International experience"
+      ],
+      "themes": [
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025"
+        }
+      ],
+      "applicationSteps": [
+        "Consult with the Dean Rusk office to discuss your project proposal.",
+        "Write a proposal.",
+        "Complete travel grant budget report.",
+        "If applicable, obtain a language proficiency recommender (required where English is not the predominant language in the country for your proposed project)."
+      ],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/dean-rusk-travel-grants/service-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "dean-rusk-study-abroad-grant",
+      "isMock": false,
+      "name": "Dean Rusk Study Abroad Grant",
+      "type": "grant",
+      "description": "For 2024-25, Dean Rusk will only review applications for immersive language programs in Arabic and East Asian Studies and select archeological programs. These specific categories are based on our available funding. Students MUST speak with the Dean Rusk Office before submitting a proposal. Do NOT apply for a Dean Rusk grant if you are participating in a Davidson-led Summer Study Program. It is strongly recommended students also obtain a faculty recommendation, but it is NOT required.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025"
+        }
+      ],
+      "applicationSteps": [
+        "Consult with the Dean Rusk office to discuss your project proposal.",
+        "Write a proposal.",
+        "Complete travel grant budget report.",
+        "If applicable, obtain a language proficiency recommender (required where English is not the predominant language in the country for your proposed project).",
+        "Complete the college's Education Study Abroad Application."
+      ],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/dean-rusk-travel-grants/study-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Limitation to Arabic and East Asian Studies programs should be followed; not sure if the change is solely for 2024-2025 or if it's permanent.",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "ann-tutwiler-travel-fund",
+      "isMock": false,
+      "name": "Ann Tutwiler Travel Fund",
+      "type": "grant",
+      "description": "Established by Ann Tutwiler '80, this fund supports individual research, study abroad or internships in lesser-developed countries.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Research",
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "boon-fund-for-international-education",
+      "isMock": false,
+      "name": "Boon Fund for International Education",
+      "type": "grant",
+      "description": "Established by C. Anthony Boon '76, the Boon grant is for study, experiential learning, or service abroad.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Project/experiential learning",
+        "Civic/service/community engagement",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "classes-of-1984-and-1986-scholarships",
+      "isMock": false,
+      "name": "Classes of 1984 and 1986 Scholarships",
+      "type": "scholarship",
+      "description": "As their class gift, these classes created scholarships to support student research, service, and experiential learning abroad.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "International experience"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "davidson-watson-alumni-scholarships",
+      "isMock": false,
+      "name": "Davidson-Watson Alumni Scholarships",
+      "type": "scholarship",
+      "description": "Created by Davidson alumni of the Watson Fellowship program, the Davidson-Watson scholarships help outstanding students pursue exceptional experiences abroad.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "International experience"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "erich-wruck-travel-fund",
+      "isMock": false,
+      "name": "Erich Wruck Travel Fund",
+      "type": "grant",
+      "description": "Established by Tom Campen, Class of 1973, in honor of Dr. Erich Wruck, Professor Emeritus of German, this fund provides assistance to students for summer travel experiences, preferably in a German-speaking country.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity",
+        "Summer"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "jesse-ball-dupont",
+      "isMock": false,
+      "name": "Jesse Ball duPont",
+      "type": "scholarship",
+      "description": "Scholarship opportunities to support student study, research, and internships abroad.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Research",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "newton-and-burkley-allen-international-fund",
+      "isMock": false,
+      "name": "Newton and Burkley Allen International Fund",
+      "type": "grant",
+      "description": "Established by Newton Allen ‘82 and Burkley M. Allen ‘80, this fund provides financial assistance for students with demonstrated financial need who wish to participate in Davidson summer group travel or to create an independent study experience.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Project/experiential learning",
+        "International experience",
+        "Credit-bearing opportunity",
+        "Summer",
+        "Students with financial need"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Demonstrated financial need."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "pat-and-katie-gilchrist-international-scholars-fund",
+      "isMock": false,
+      "name": "Pat and Katie Gilchrist International Scholars Fund",
+      "type": "grant",
+      "description": "This fund provides summer grants for international study.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "International experience",
+        "Credit-bearing opportunity",
+        "Summer"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "patrick-braxton-andrew-international-endowed-fund",
+      "isMock": false,
+      "name": "Patrick Braxton-Andrew International Endowed Fund",
+      "type": "grant",
+      "description": "Established in the memory of Patrick Braxton-Andrew ‘06, this fund will honor Patrick’s spirit of adventure by providing grants to Davidson students for study, research, internships, or travel abroad.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "spell-family-fund",
+      "isMock": false,
+      "name": "Spell Family Fund",
+      "type": "grant",
+      "description": "Established by Rachelle and Nathan Spell ‘86, this fund supports international experiences and provides assistance for students with demonstrated financial need.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "International experience",
+        "Credit-bearing opportunity",
+        "Students with financial need"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Demonstrated financial need."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "virginia-and-dean-rusk-scholarships",
+      "isMock": false,
+      "name": "Virginia and Dean Rusk Scholarships",
+      "type": "scholarship",
+      "description": "Established through a bequest from Virginia and Dean Rusk '31, this scholarship supports opportunities for international study and service.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "white-smith-scholarships",
+      "isMock": false,
+      "name": "White-Smith Scholarships",
+      "type": "scholarship",
+      "description": "Given by William A. White, Jr. '52 and Elizabeth Smith White, this fund provides scholarships for international study and service projects in any region or field.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Project/experiential learning",
+        "Civic/service/community engagement",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "ratliff-endowment-in-economics",
+      "isMock": false,
+      "name": "Ratliff Endowment in Economics",
+      "type": "grant",
+      "description": "Given in honor of Dr. Charles E. Ratliff, Jr., Professor Emeritus of Economics, this fund supports students conducting economic research abroad.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Research",
+        "International experience",
+        "Finance"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "travel",
+        "global",
+        "culture",
+        "abroad",
+        "business",
+        "economics",
+        "money"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "ambassador-jack-perry-scholarship",
+      "isMock": false,
+      "name": "Ambassador Jack Perry Scholarship",
+      "type": "scholarship",
+      "description": "Created in honor of the Dean Rusk Program's first Director, Ambassador Jack Perry, this scholarship supports students who pursue health and medical internships in developing countries.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Language or region specific",
+        "International experience",
+        "Medical/healthcare"
+      ],
+      "themes": [
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad",
+        "health",
+        "medicine",
+        "public health"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "donald-winfrey-memorial-grant-for-public-health-research",
+      "isMock": false,
+      "name": "Donald Winfrey Memorial Grant for Public Health Research",
+      "type": "grant",
+      "description": "This fund supports students who wish to pursue international travel, study and research related to Public Health.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "International experience",
+        "Credit-bearing opportunity",
+        "Medical/healthcare"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad",
+        "health",
+        "medicine",
+        "public health"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "mary-lynn-richardson-fund",
+      "isMock": false,
+      "name": "Mary Lynn Richardson Fund",
+      "type": "grant",
+      "description": "This fund enables outstanding students to participate in medical internships in developing countries.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Language or region specific",
+        "International experience",
+        "Medical/healthcare"
+      ],
+      "themes": [
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad",
+        "health",
+        "medicine",
+        "public health"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "fujita-fund",
+      "isMock": false,
+      "name": "Fujita Fund",
+      "type": "grant",
+      "description": "Established in honor of the Fujita family, the Fujita Arts Grant enables a talented Davidson artist to pursue a high-quality, independent art project (visual art, music, dance, or drama) outside of the United States.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Project/experiential learning",
+        "International experience",
+        "Arts"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "travel",
+        "global",
+        "culture",
+        "abroad",
+        "creative",
+        "design",
+        "visual culture",
+        "music",
+        "theatre",
+        "film",
+        "writing"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "hanafi-fund",
+      "isMock": false,
+      "name": "Hanafi Fund",
+      "type": "grant",
+      "description": "The Hanafi Grant allows for an outstanding experience promoting understanding, appreciation, and celebration of religious diversity abroad.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "International experience",
+        "Credit-bearing opportunity",
+        "Religious/spiritual"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "travel",
+        "global",
+        "culture",
+        "abroad",
+        "faith",
+        "spirituality",
+        "religion"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "morehead-scholarship",
+      "isMock": false,
+      "name": "Morehead Scholarship",
+      "type": "scholarship",
+      "description": "Established by Cynthia P. and Richard H. Morehead '56, this scholarship allows student travel and study abroad to countries and regions with significant Muslim populations, such as Africa, Southeast Asia, Russia, China, and South America.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity",
+        "Religious/spiritual"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad",
+        "faith",
+        "spirituality",
+        "religion"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "dr-jay-oswalt-scholarship",
+      "isMock": false,
+      "name": "Dr. Jay Oswalt Scholarship",
+      "type": "scholarship",
+      "description": "Established by an estate gift of Adeline Oswalt '35, this scholarship provides financial aid for study and travel in India.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "India",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "george-labban-jr-memorial-greece-travel-fund",
+      "isMock": false,
+      "name": "George Labban, Jr., Memorial Greece Travel Fund",
+      "type": "grant",
+      "description": "Established by the Reverend John Porter ‘72 in honor of Davidson’s first professor of Classics and longtime leader of the Classics Seminar Abroad, the Labban fund supports student learning and travel experience in Greece.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Greece",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "hirose-scholarships-for-east-asian-studies",
+      "isMock": false,
+      "name": "Hirose Scholarships for East Asian Studies",
+      "type": "scholarship",
+      "description": "Established in honor of the Hirose family, the Hirose Grant enables outstanding students and faculty to conduct independent research and language training in East Asia.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Research",
+        "Language or region specific",
+        "International experience"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "East Asia",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "latin-america-fund",
+      "isMock": false,
+      "name": "Latin America Fund",
+      "type": "grant",
+      "description": "This fund allows for a summer experience and learning in Central or South America.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Internship",
+        "Project/experiential learning",
+        "Research",
+        "Civic/service/community engagement",
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity",
+        "Summer"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Central or South America",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "mcnab-fund-for-middle-east-studies",
+      "isMock": false,
+      "name": "McNab Fund for Middle East Studies",
+      "type": "grant",
+      "description": "Established by James R. McNab, Jr. '66, this endowment enhances Middle East Studies at Davidson by providing funding for library resources, faculty and student conferences, and student research in the Middle East.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Research",
+        "Language or region specific",
+        "International experience",
+        "Personal/professional development"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad",
+        "career",
+        "conference",
+        "training",
+        "certification"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Middle East",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "tafaahum-fund-for-arabic-and-middle-eastern-studies",
+      "isMock": false,
+      "name": "Tafaahum Fund for Arabic and Middle Eastern Studies",
+      "type": "grant",
+      "description": "This fund supports student opportunities in Arabic and Middle Eastern Studies, specifically Davidson in Jordan (also known as the Qasid program).",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Language or region specific",
+        "International experience",
+        "Credit-bearing opportunity"
+      ],
+      "themes": [
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "Respective Dean Rusk/Study Abroad program deadlines; one source lists 2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/endowed-travel-funds",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Davidson in Jordan (the Qasid program)",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "pulitzer-center-fellowship",
+      "isMock": false,
+      "name": "Pulitzer Center Fellowship",
+      "type": "fellowship",
+      "description": "Each spring, one Davidson student is selected to receive a grant in order to complete an independent multimedia international reporting project. The project should focus on a systemic issue of global importance that is under-reported or unreported in U.S. mainstream media. You will receive exclusive training, support and mentorship from staff at the Pulitzer Center on Crisis Reporting. While working on your project in the field, a member of the Pulitzer Center staff will serve as your editor - establishing deadlines and assisting you in crafting publishable pieces. As a grant recipient, you will also choose a past Pulitzer Center journalist to serve as a professional mentor (subject to availability) who will offer practical advice and non-editorial support.",
+      "office": "Dean Rusk International Studies Program",
+      "tags": [
+        "Project/experiential learning",
+        "International experience"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "travel",
+        "global",
+        "culture",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/dean-rusk-international-studies-program/international-travel-grants-students/pulitzer-center-fellowship",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "davidson-college-public-health-experiential-learning-grant",
+      "isMock": false,
+      "name": "Davidson College Public Health Experiential Learning Grant",
+      "type": "grant",
+      "description": "Established by Mary Kathryn Rains Poole ’09 and Blake Poole ’08, this fund aids students participating in unpaid or low-paying experiential learning opportunities related to public health policy programs or research.",
+      "office": "Public Health Department",
+      "tags": [
+        "Project/experiential learning",
+        "Medical/healthcare"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "health",
+        "medicine",
+        "public health"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academic-departments/public-health/grants-endowments",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "john-and-mary-gyves-fund-for-public-health-and-ethics",
+      "isMock": false,
+      "name": "John and Mary Gyves Fund for Public Health and Ethics",
+      "type": "grant",
+      "description": "Established in loving memory of these parents of three Davidson sons, this fund provides support for and encourages student research, scholarship, deep engagement and active participation in the fields of global health, public health, public health ethics, bioethics and medicine.",
+      "office": "Public Health Department",
+      "tags": [
+        "Research",
+        "Personal/professional development",
+        "Medical/healthcare"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "career",
+        "conference",
+        "training",
+        "certification",
+        "health",
+        "medicine",
+        "public health"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "No information",
+        "notes": null
+      },
+      "deadlines": [],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academic-departments/public-health/grants-endowments",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "alvarez-access-fund",
+      "isMock": false,
+      "name": "Alvarez Access Fund",
+      "type": "grant",
+      "description": "The Alvarez Grant Program provides financial support to international students seeking assistance with cost-of-living expenses associated with career and curricular pursuits (e.g., unpaid/low-paying internships or research experiences, conferences, job shadowing, university/college campus visits, interviews, etc.), or needs related to academic success (e.g., class & material fees, etc.). The Alvarez Access grant amounts will rarely exceed the standard amount of $1,200 and never exceed $2,000. All active, enrolled F-1 international students are eligible to receive the Access grant twice in an academic year (fall, spring, and summer).",
+      "office": "Office of International Student Engagement",
+      "tags": [
+        "Internship",
+        "Research",
+        "Credit-bearing opportunity",
+        "Personal/professional development",
+        "Summer",
+        "Winter and/or spring break",
+        "Academic term",
+        "International students"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "career",
+        "conference",
+        "training",
+        "certification"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Active, enrolled F-1 international students."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 2000,
+        "text": "Maximum $2,000",
+        "notes": "Rarely exceeds the standard amount of $1,200"
+      },
+      "deadlines": [
+        {
+          "label": "Fall semester",
+          "date": "2024-09-09",
+          "text": "9/9/2024"
+        },
+        {
+          "label": "Winter break",
+          "date": "2024-11-04",
+          "text": "11/4/2024"
+        },
+        {
+          "label": "Spring semester",
+          "date": "2025-01-27",
+          "text": "1/27/2025"
+        },
+        {
+          "label": "Summer break",
+          "date": "2025-03-31",
+          "text": "3/31/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/international-student-engagement/grants/alvarez-grant-program",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "alvarez-guarantee-fund",
+      "isMock": false,
+      "name": "Alvarez Guarantee Fund",
+      "type": "grant",
+      "description": "The Alvarez Grant Program provides financial support to international students seeking assistance with cost-of-living expenses associated with career and curricular pursuits (e.g., unpaid/low-paying internships or research experiences, conferences, job shadowing, university/college campus visits, interviews, etc.), or needs related to academic success (e.g., class & material fees, etc.). The Alvarez Guarantee Fund provides funding for two $4,000 career experiences or programs that complement academic coursework. Active, enrolled F-1 international students receiving any level of scholarship or financial aid from Davidson College are eligible.",
+      "office": "Office of International Student Engagement",
+      "tags": [
+        "Internship",
+        "Research",
+        "Credit-bearing opportunity",
+        "Personal/professional development",
+        "Summer",
+        "Winter and/or spring break",
+        "Academic term",
+        "International students"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "career",
+        "conference",
+        "training",
+        "certification"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Active, enrolled F-1 international students receiving any level of scholarship or financial aid from Davidson College."
+      },
+      "awardAmount": {
+        "min": 4000,
+        "max": 4000,
+        "text": "$4,000",
+        "notes": "Funding for two $4,000 experiences or programs"
+      },
+      "deadlines": [
+        {
+          "label": "Fall semester",
+          "date": "2024-09-09",
+          "text": "9/9/2024"
+        },
+        {
+          "label": "Winter break",
+          "date": "2024-11-04",
+          "text": "11/4/2024"
+        },
+        {
+          "label": "Spring semester",
+          "date": "2025-01-27",
+          "text": "1/27/2025"
+        },
+        {
+          "label": "Summer break",
+          "date": "2025-03-31",
+          "text": "3/31/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/international-student-engagement/grants/alvarez-grant-program",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "weinstein-travel-grant",
+      "isMock": false,
+      "name": "Weinstein Travel Grant",
+      "type": "grant",
+      "description": "The Weinstein Travel Grant is administered through International Student Engagement and made possible through a generous gift from Carol and Marcus Weinstein. The grant is designed to give international students (F-1 visa holders) an immersive experience within the United States, but outside of the Charlotte metro area. International students are invited to pursue experiential learning opportunities that allow for intentional immersion, reflection, and transformation. Applicants should creatively design projects/trips that facilitate interaction with diverse cultures, environments, standards of living, artistic expression, political climates, and/or more, across the U.S.",
+      "office": "Office of International Student Engagement",
+      "tags": [
+        "Project/experiential learning",
+        "Language or region specific",
+        "Winter and/or spring break"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "language",
+        "culture",
+        "region",
+        "global"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "International students (F-1 visa holders)."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 2000,
+        "text": "Maximum $2,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2024-10-18",
+          "text": "10/18/2024"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/international-student-engagement/grants/weinstein-travel-grant",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": "Winter break only",
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "air-artistic-independent-research-grant",
+      "isMock": false,
+      "name": "AIR (Artistic Independent Research) Grant",
+      "type": "grant",
+      "description": "AIR (Artistic Independent Research) grants support artistic and creative projects based in academia. The grant was designed to support the needs of an art-based independent study. Grants could also fund a project in a creative genre class. Grants can be in any art genre including (but not limited to) theatre, film, music, dance, visual art, spoken word, and creative writing. Thanks to the generous giving of members of the Friends of the Arts, Davidson Arts and Creative Engagement has developed the grant to expand the relationship between creative endeavors and academics. Grants are open to all majors. Applicants need to have an assigned faculty advisor that oversees the project and must meet with said professor before applying. Individual or group projects are accepted. Preference will be given to interdisciplinary projects.",
+      "office": "Davidson Arts & Creative Engagement",
+      "tags": [
+        "Project/experiential learning",
+        "Arts"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "creative",
+        "design",
+        "visual culture",
+        "music",
+        "theatre",
+        "film",
+        "writing"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Open to all majors. Applicants need an assigned faculty advisor and must meet with them before applying."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 500,
+        "text": "Maximum $500",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Rolling"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/arts-creative-engagement/artistic-independent-research-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "micro-arts-grants-for-independent-creatives-magic-grant",
+      "isMock": false,
+      "name": "Micro Arts Grants for Independent Creatives (MAGIC) Grant",
+      "type": "grant",
+      "description": "DACE encourages Davidson creatives to embark on small, flexible art projects that re-immerse them and their communities in the creative process. Thanks to the generosity of Friends of the Arts, DACE will provide Micro Arts Grants for Independent Creatives (MAGIC) for Davidson students, faculty, and staff. The MAGIC Grant is intended to be adaptable to applicants’ wide-ranging needs and varying summer schedules. With more flexible guidelines, MAGIC Grants are meant to invigorate Davidson’s creative community to begin projects in various stages of the iterative process. MAGIC Grants will fund projects in any art genre including (but not limited to) theatre, film, music, dance, visual art, spoken word, and creative writing. Grants are open to students of all majors. Individual or group projects are accepted. Projects may be extracurricular or related to a fall course. For example, a student may apply for a MAGIC Grant to create artistic work that supplements a senior thesis or capstone project in the fall semester. MAGIC Grants do not purchase long-term equipment. Projects cannot include paying for an outside Davidson professional to come to the college for any reason.",
+      "office": "Davidson Arts & Creative Engagement",
+      "tags": [
+        "Project/experiential learning",
+        "Arts"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "creative",
+        "design",
+        "visual culture",
+        "music",
+        "theatre",
+        "film",
+        "writing"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Open to students of all majors."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 400,
+        "text": "Maximum $400",
+        "notes": "One source lists a maximum of $300-$400"
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Rolling"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/arts-creative-engagement/micro-arts-grant-independent-creatives-magic",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "student-spike-grant",
+      "isMock": false,
+      "name": "Student Spike! Grant",
+      "type": "grant",
+      "description": "Student Spike! grants support student-driven, student-led, student-performed art on campus. Thanks to the generous giving of members, Friends of the Arts developed the grant program to help encourage extracurricular student art on campus. We believe in the creativity and artistic innovation of Davidson students, and we hope to enhance the arts culture on campus. Grants can be in any art genre including (but not limited to) theatre, film, music, dance, visual art, spoken word, and creative writing. Grants are open to all majors. Individual or group projects are accepted. Preference will be given to interdisciplinary projects. Projects must be extracurricular, and not related to coursework, research or honors thesis work. Spike grants do not purchase long-term equipment. Projects cannot include paying for an outside Davidson professional to come to the college for any reason. Students apply directly to DACE with no departmental or faculty sponsorship.",
+      "office": "Davidson Arts & Creative Engagement",
+      "tags": [
+        "Project/experiential learning",
+        "Arts"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "creative",
+        "design",
+        "visual culture",
+        "music",
+        "theatre",
+        "film",
+        "writing"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Open to all majors. Projects must be extracurricular."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 1500,
+        "text": "Maximum $1,500",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Rolling"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/arts-creative-engagement/student-spike-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "chaplains-office-conference-retreat-grants",
+      "isMock": false,
+      "name": "Chaplains' Office Conference/Retreat Grants",
+      "type": "grant",
+      "description": "The Chaplains' Office awards grants of up to $250 for students to attend conferences (or retreats held locally) centered on faith or spirituality from any tradition. These grants are awarded on a rolling basis throughout the academic year. Preference is given to grant applications submitted at least one month prior to the start date of the conference or retreat.",
+      "office": "Chaplains' Office",
+      "tags": [
+        "Personal/professional development",
+        "Religious/spiritual"
+      ],
+      "themes": [
+        "career",
+        "conference",
+        "training",
+        "certification",
+        "faith",
+        "spirituality",
+        "religion"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 250,
+        "text": "Maximum $250",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Rolling"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/religious-and-spiritual-life/programs-resources/grants#sectionJump-1868",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "chaplains-office-winter-spring-and-summer-break-grants",
+      "isMock": false,
+      "name": "Chaplains' Office Winter, Spring, and Summer Break Grants",
+      "type": "grant",
+      "description": "Winter, Spring, and Summer Break Grants are awarded to students for short-term study, service, or experiential learning, either domestic or international, that relates to or embodies expressions of spirituality or any religious tradition(s). Applicants must clearly state in their supporting essay how the proposed project will help them learn about or embody one or more spiritual or religious traditions. The maximum grant awards are $750 for Winter and Spring Break and $3500 for Summer Break. While these grants may be awarded to a project related to any religious or spiritual tradition, a portion of the grant funds are earmarked (by wishes of the donors) for student projects in specific traditions: initiatives directly rooted in Asian cultures and traditions, whether focused on Asian religions or Asian contemplative and mindfulness practices such as meditation, prayer, rituals, or yoga; retreats at Buddhist communities, temples, monasteries, etc.; projects relating to or embodying Christian faith in an intentional and clear manner; faith-oriented experiences students considering a Christian church vocation; experiences for students who identify as Jewish, either religiously or culturally, and whose project focuses on some dimension of Judaism.",
+      "office": "Chaplains' Office",
+      "tags": [
+        "Project/experiential learning",
+        "Civic/service/community engagement",
+        "Summer",
+        "Winter and/or spring break",
+        "Religious/spiritual"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "faith",
+        "spirituality",
+        "religion"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 3500,
+        "text": "Winter/Spring Break: $750; Summer Break: $3,500",
+        "notes": "Maximums vary by break"
+      },
+      "deadlines": [],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/religious-and-spiritual-life/programs-resources/grants#sectionJump-1868",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "cook-family-summer-fellowship",
+      "isMock": false,
+      "name": "Cook Family Summer Fellowship",
+      "type": "fellowship",
+      "description": "Cook Family Summer Fellowships are awarded to two Davidson students for self-designed summer internships in non-profit organizations (including churches) that, by wishes of the donors, demonstrate a Christian commitment through their mission statement, their stated goals and objectives, or their embodiment of values that they distinctly associate with Christian faith. Duration: 8-10 weeks (summer dates are flexible). Provisions: $3,500 for the summer, plus up to $1,500 in grant funds to reimburse the student for qualified summer expenses (e.g. housing, food, travel, etc.). Applications: First-years, sophomores, and juniors may submit an application towards the beginning of the spring semester.",
+      "office": "Chaplains' Office",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Non-profit",
+        "Religious/spiritual"
+      ],
+      "themes": [
+        "social impact",
+        "community",
+        "service",
+        "faith",
+        "spirituality",
+        "religion"
+      ],
+      "eligibility": {
+        "classYears": [
+          "first-year",
+          "sophomore",
+          "junior"
+        ],
+        "notes": null
+      },
+      "awardAmount": {
+        "min": 5000,
+        "max": 5000,
+        "text": "$5,000",
+        "notes": "$3,500 for the summer, plus up to $1,500 to reimburse qualified summer expenses"
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Application towards the beginning of the spring semester"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/religious-and-spiritual-life/programs-resources/summer-internships-fellowships",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "congregational-fellowship-for-leadership-and-service",
+      "isMock": false,
+      "name": "Congregational Fellowship for Leadership and Service",
+      "type": "fellowship",
+      "description": "Fellowships to explore religious leadership and service in any tradition are available to students with a strong record of academic achievement, campus leadership, and concern for others. Juniors are nominated by faculty, staff, and area clergy. Nominees may or may not be considering a religious occupation (as a clergyperson or professional lay leader), but community members perceive them as having gifts for such leadership and service. They submit formal applications to the College Chaplain at chaplain@davidson.edu. Fellows take part in a supervised, congregation-based summer internship after their junior year under the mentorship of a seasoned clergyperson. Early in the fall semester of their senior year, they gather as a cohort with the college chaplain to reflect on what they have learned over the summer about congregational leadership and about their own sense of calling or career direction. Duration: 8 weeks (summer dates are flexible).",
+      "office": "Chaplains' Office",
+      "tags": [
+        "Internship",
+        "Summer",
+        "Religious/spiritual"
+      ],
+      "themes": [
+        "faith",
+        "spirituality",
+        "religion"
+      ],
+      "eligibility": {
+        "classYears": [
+          "junior"
+        ],
+        "notes": "Juniors nominated by faculty, staff, or area clergy."
+      },
+      "awardAmount": {
+        "min": 4000,
+        "max": null,
+        "text": "$4,000+",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Nomination required; nominated students may apply towards the beginning of the spring semester of their junior year"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": "chaplain@davidson.edu",
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/religious-and-spiritual-life/programs-resources/summer-internships-fellowships",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "stapleton-davidson-urban-service-internship",
+      "isMock": false,
+      "name": "Stapleton/Davidson Urban Service Internship",
+      "type": "internship",
+      "description": "This summer internship engages a cohort of students in full-time placements with Charlotte-based non-profits serving people experiencing homelessness and deep poverty. Students of any religious or spiritual background may apply, with the understanding that they will integrate their experience in urban service with learning about social justice through a Christian lens. Interns participate in regular opportunities for continuing education and meet weekly with the college chaplain and local religious leaders to reflect on their experiences. Duration: 10 weeks (Memorial Day – early August). Applications: First-years, sophomores, and juniors may submit an application towards the beginning of the spring semester.",
+      "office": "Chaplains' Office",
+      "tags": [
+        "Internship",
+        "Civic/service/community engagement",
+        "Summer",
+        "Non-profit",
+        "Religious/spiritual"
+      ],
+      "themes": [
+        "service",
+        "community",
+        "volunteering",
+        "social impact",
+        "faith",
+        "spirituality",
+        "religion"
+      ],
+      "eligibility": {
+        "classYears": [
+          "first-year",
+          "sophomore",
+          "junior"
+        ],
+        "notes": null
+      },
+      "awardAmount": {
+        "min": 4000,
+        "max": 4000,
+        "text": "$4,000 +housing",
+        "notes": "Plus housing"
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Beginning of spring semester"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/offices-and-services/religious-and-spiritual-life/programs-resources/summer-internships-fellowships",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "nisbet-venture-fund",
+      "isMock": false,
+      "name": "Nisbet Venture Fund",
+      "type": "program",
+      "description": "The Nisbet Venture Fund is an annual business development program and pitch competition presented by the Hurt Hub@Davidson. The program provides Davidson students and recent alumni the opportunity to compete for up to $32,500 in grants and investment in their innovative, for-profit ventures. Established in 2014 through the generous support from Marian Nisbet and Chip Nisbet ’86. To prepare finalists for competition, they receive coaching and mentorship from seasoned entrepreneurs and business professionals before pitching to a panel of investors and entrepreneurs! The Nisbet Venture Fund is specifically designed for currently enrolled Davidson College students and recent alumni to support their entrepreneurial journey.",
+      "office": "Jay Hurt Hub for Innovation and Entrepreneurship",
+      "tags": [
+        "Project/experiential learning",
+        "Academic term",
+        "Entrepreneurship/innovation"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "startup",
+        "business",
+        "innovation",
+        "venture"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Currently enrolled Davidson students and recent alumni."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 32500,
+        "text": "Up to $32,500",
+        "notes": "One source lists a maximum of $25,000"
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-27",
+          "text": "2/27/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://hurthub.davidson.edu/nisbet-venture-fund/",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "avinger-impact-fund",
+      "isMock": false,
+      "name": "Avinger Impact Fund",
+      "type": "grant",
+      "description": "Established in honor of Robert L. Avinger, Jr., a member of the Davidson Class of 1960 and professor of Economics from 1967-1980, the Avinger Impact Fund fuels the vision, qualities, and passions of an innovator, giving evidence of creativity, energy, and initiative that will lead to success in future endeavors. (The Avinger Impact Fund was formerly known as the Avinger Scholars Program.) Through small, project-based grants, the Avinger Impact Fund awards microgrants up to $7,000 to Davidson College Student entrepreneurs looking to validate and advance their idea. We have found that funding, paired with mentorship and guidance, early in a company’s lifecycle, can make a significant impact on future success.",
+      "office": "Jay Hurt Hub for Innovation and Entrepreneurship",
+      "tags": [
+        "Project/experiential learning",
+        "Entrepreneurship/innovation"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "startup",
+        "business",
+        "innovation",
+        "venture"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 7000,
+        "text": "Maximum $7,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2024-10-28",
+          "text": "10/28/2024"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://hurthub.davidson.edu/avinger-impact-fund/",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "try-it-fund",
+      "isMock": false,
+      "name": "Try It Fund",
+      "type": "grant",
+      "description": "The Try It Fund is a grant competition that awards Davidson students with up to $1,000 to pursue a creative or innovative idea. We fund for-profit ventures, so your project must make money by selling a product, idea, or service. We realize you are going to make mistakes when attempting something you’ve never done before. Failure is part of the creative process, and we want you to take risks, try new ideas, learn how to quickly recognize what doesn’t work and pivot onto something that does.",
+      "office": "Jay Hurt Hub for Innovation and Entrepreneurship",
+      "tags": [
+        "Project/experiential learning",
+        "Entrepreneurship/innovation"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "startup",
+        "business",
+        "innovation",
+        "venture"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 1000,
+        "text": "Maximum $1,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Rolling"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://hurthub.davidson.edu/try-it-fund/",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "r-craig-and-sheila-yoder-applied-research-fellowship",
+      "isMock": false,
+      "name": "R. Craig and Sheila Yoder Applied Research Fellowship",
+      "type": "fellowship",
+      "description": "The R. Craig and Sheila Yoder Applied Research Fellowship supports one student each summer for research with a faculty member and an external mentor. The Yoder fellowship, administered by the Jay Hurt Hub for Innovation and Entrepreneurship, seeks proposals for projects that have as a significant component the application or development of new processes, products or services with potential for commercialization. The process of researching and evaluating the feasibility of commercialization is required as part of the fellowship, but there is no requirement to actually go to market with a process, product or service. The project must be done in collaboration with a Davidson faculty member and a subject matter expert from a related business, professional, or industry partner. Project proposals must be written by the student, in consultation with the faculty member and subject matter expert.",
+      "office": "Jay Hurt Hub for Innovation and Entrepreneurship",
+      "tags": [
+        "Project/experiential learning",
+        "Research",
+        "Summer",
+        "Entrepreneurship/innovation"
+      ],
+      "themes": [
+        "independent project",
+        "self-designed",
+        "hands-on",
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "startup",
+        "business",
+        "innovation",
+        "venture"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 9000,
+        "text": "Maximum $9,000",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-09",
+          "text": "2/9/2025"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academics/research-opportunities/undergraduate-research/r-craig-and-sheila-yoder-applied-research-fellowship",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "research-in-science-experience-rise",
+      "isMock": false,
+      "name": "Research in Science Experience (RISE)",
+      "type": "program",
+      "description": "Research in Science Experience (RISE) is a program for rising sophomores at Davidson College who are interested in careers in science or medicine. RISE is designed and intended for students from groups historically excluded from the sciences, including minoritized, low-wealth, first-generation college-going, and new-majority students. Any Davidson first-year student may apply. RISE is a four to six-week, intensive summer research fellowship program in the sciences intended to introduce students to undergraduate research. One of the program's goals is to prepare students for more extensive academic-year and summer research experiences they may seek later. Students present their research to each other in program meetings during the summer, and to the wider campus and community at the Davidson College Summer Research Symposium held in September.",
+      "office": "Academic Departments - STEM Focus",
+      "tags": [
+        "Research",
+        "Summer",
+        "STEM"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "science",
+        "technology",
+        "data",
+        "engineering",
+        "math"
+      ],
+      "eligibility": {
+        "classYears": [
+          "first-year"
+        ],
+        "notes": "Any Davidson first-year student may apply."
+      },
+      "awardAmount": {
+        "min": 2500,
+        "max": 2500,
+        "text": "$2,500 +housing",
+        "notes": "Plus housing"
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Spring semester"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academics/research-opportunities/undergraduate-research/research-science-experience",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "davidson-research-initiative-dri",
+      "isMock": false,
+      "name": "Davidson Research Initiative (DRI)",
+      "type": "program",
+      "description": "The Davidson Research Initiative (DRI) offers students with opportunities for research training and close collaborative research with faculty during the summer. Sophomores and juniors are eligible to apply for DRI Summer Research Fellowships in any discipline. When applying for a DRI opportunity, a student must specify whether the project they plan to pursue is an independent project designed solely by the student, or a project that is related to an existing vein of the faculty mentor's ongoing research, but will include an independent/ unique component that differentiates it. In the case of the latter, the student must articulate (in the proposal) the unique/ independent aspect. DRI Fellows will also be required to attend a series of training workshops over the summer designed to enhance the information provided by their mentors. Collaborative research project proposals, involving two to four students, will be accepted. However, each student applying to participate in the collaborative project must submit their own application. Collaborative applications will be reviewed and rated as a single project.",
+      "office": "Academic Departments",
+      "tags": [
+        "Research",
+        "Summer",
+        "STEM"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "science",
+        "technology",
+        "data",
+        "engineering",
+        "math"
+      ],
+      "eligibility": {
+        "classYears": [
+          "sophomore",
+          "junior"
+        ],
+        "notes": null
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "$600/wk, +$1,000 for travel",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025 at 5:00pm"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academics/research-opportunities/undergraduate-research/davidson-research-initiative",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "mimms-summer-research-fellowship",
+      "isMock": false,
+      "name": "Mimms Summer Research Fellowship",
+      "type": "fellowship",
+      "description": "Designated for students exploring research in biochemistry, genetics, molecular biology, genomics or bioinformatics. Within Davidson Research Initiative.",
+      "office": "Academic Departments",
+      "tags": [
+        "Research",
+        "Summer",
+        "STEM"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "science",
+        "technology",
+        "data",
+        "engineering",
+        "math"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Listed within the Davidson Research Initiative; check the DRI eligibility rules."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "$600/wk, +$1,000 for travel",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025 at 5:00pm"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academics/research-opportunities/undergraduate-research/davidson-research-initiative",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "ross-summer-research-fellowship",
+      "isMock": false,
+      "name": "Ross Summer Research Fellowship",
+      "type": "fellowship",
+      "description": "Designated for students who have an interest in the social sciences or humanities disciplines. Within Davidson Research Initiative.",
+      "office": "Academic Departments",
+      "tags": [
+        "Research",
+        "Summer",
+        "Humanities/social sciences"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "history",
+        "culture",
+        "society",
+        "literature",
+        "philosophy"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Listed within the Davidson Research Initiative; check the DRI eligibility rules."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "$600/wk, +$1,000 for travel",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025 at 5:00pm"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academics/research-opportunities/undergraduate-research/davidson-research-initiative",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "stevens-summer-research-fellowship",
+      "isMock": false,
+      "name": "Stevens Summer Research Fellowship",
+      "type": "fellowship",
+      "description": "Designated for students who are interested in studying the attributes of chemistry. Within Davidson Research Initiative.",
+      "office": "Academic Departments",
+      "tags": [
+        "Research",
+        "Summer",
+        "STEM"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "science",
+        "technology",
+        "data",
+        "engineering",
+        "math"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Listed within the Davidson Research Initiative; check the DRI eligibility rules."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "$600/wk, +$1,000 for travel",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025 at 5:00pm"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academics/research-opportunities/undergraduate-research/davidson-research-initiative",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "cannon-foundation-fellowship",
+      "isMock": false,
+      "name": "Cannon Foundation Fellowship",
+      "type": "fellowship",
+      "description": "Designated for any student interested in pursuing independent research. Within Davidson Research Initiative.",
+      "office": "Academic Departments",
+      "tags": [
+        "Research",
+        "Summer"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Listed within the Davidson Research Initiative; check the DRI eligibility rules."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": null,
+        "text": "$600/wk, +$1,000 for travel",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": "2025-02-01",
+          "text": "2/1/2025 at 5:00pm"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academics/research-opportunities/undergraduate-research/davidson-research-initiative",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "abernethy-endowment-grant",
+      "isMock": false,
+      "name": "Abernethy Endowment Grant",
+      "type": "grant",
+      "description": "The George L. Abernethy Endowment supports independent student research and other experiential learning opportunities in the humanities, arts, or social sciences. Research can occur in the United States and/or abroad and during the academic year and/or the summer. Grant awards average about $2,000 but have ranged from $250 to $5900. Students generally work with a mentor who serves as a touch point throughout their independent project. In agreement to serve as the mentor on the student’s project, faculty will submit a mentorship agreement plan that addresses the feasibility of the project and the nature of the collaboration between the mentor and the students. Faculty will submit a final review once the student has completed the project and receive a $500 stipend.",
+      "office": "Academic Departments",
+      "tags": [
+        "Research",
+        "International experience",
+        "Summer",
+        "Winter and/or spring break",
+        "Academic term",
+        "Humanities/social sciences"
+      ],
+      "themes": [
+        "independent research",
+        "faculty mentor",
+        "inquiry",
+        "travel",
+        "global",
+        "culture",
+        "abroad",
+        "history",
+        "society",
+        "literature",
+        "philosophy"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": 250,
+        "max": 5900,
+        "text": "Standard: $2,000; Maximum: $5,900",
+        "notes": "Awards average about $2,000 and have ranged from $250 to $5,900"
+      },
+      "deadlines": [
+        {
+          "label": "Winter break",
+          "date": null,
+          "text": "10/1"
+        },
+        {
+          "label": "Summer",
+          "date": null,
+          "text": "2/1"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academics/research-opportunities/undergraduate-research/abernethy-endowment-grant",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "east-asia-internship-program",
+      "isMock": false,
+      "name": "East Asia Internship Program",
+      "type": "program",
+      "description": "The East Asia Internship Program offers students the opportunity to gain real-world experience in the dynamic East and Southeast Asia region. Eligible internship hosts include businesses, governments, research institutes, non-profit organizations, and other institutions in Brunei, Cambodia, East Timor, Indonesia, Japan, South Korea, Laos, Malaysia, Mongolia, Myanmar, the Philippines, Singapore, Taiwan, Thailand, and Vietnam. With the assistance of the Betty and B. Frank Matthews II ’49 Center for Career Development (Matthews Center) and the Dean Rusk International Studies Program, students can apply and serve as an intern in a wide variety of fields. While the program has various connections developed by the college, students are encouraged to pursue opportunities identified through independent research.",
+      "office": "Chinese Studies Department, Career Center, and Dean Rusk",
+      "tags": [
+        "Internship",
+        "Language or region specific",
+        "International experience",
+        "Summer"
+      ],
+      "themes": [
+        "language",
+        "culture",
+        "region",
+        "global",
+        "travel",
+        "abroad"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": null
+      },
+      "awardAmount": {
+        "min": 6500,
+        "max": 6500,
+        "text": "$6,500",
+        "notes": null
+      },
+      "deadlines": [],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://www.davidson.edu/academic-departments/chinese-studies/internships",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    },
+    {
+      "id": "professional-development-grants",
+      "isMock": false,
+      "name": "Professional Development Grants",
+      "type": "grant",
+      "description": "Betty and B. Frank Matthews II ’49 Center for Career Development provides supplemental support of professional development opportunities for students with demonstrated financial need that include, but are not limited to, certifications, testing prep, training and conferences through the Tony Snow ‘77 Professional Development Fund, The Duke Endowment Preparatory Experiences Grant along with the support of the generosity of numerous alumni, parents and friends.",
+      "office": "Betty and B. Frank Matthews II '49 Center for Career Development",
+      "tags": [
+        "Personal/professional development",
+        "Students with financial need"
+      ],
+      "themes": [
+        "career",
+        "conference",
+        "training",
+        "certification"
+      ],
+      "eligibility": {
+        "classYears": null,
+        "notes": "Demonstrated financial need."
+      },
+      "awardAmount": {
+        "min": null,
+        "max": 750,
+        "text": "Maximum $750",
+        "notes": null
+      },
+      "deadlines": [
+        {
+          "label": null,
+          "date": null,
+          "text": "Rolling"
+        }
+      ],
+      "applicationSteps": [],
+      "contact": null,
+      "sourceUrl": "https://sites.google.com/davidson.edu/matthews-center-resources/resource-home/funding-resources/professional-development-grants",
+      "verificationStatus": "unverified",
+      "dataAsOf": "2025-02-12",
+      "notes": null,
+      "pastRecipientExperiences": []
+    }
+  ]
