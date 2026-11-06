@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import type { ChatReply, ChatTurn } from "@/lib/ai";
 import { toHistoryText } from "@/lib/history";
+import GrantResults from "@/components/GrantResults";
 
 type Message =
   | { role: "Student"; text: string }
@@ -85,13 +86,7 @@ export default function Home() {
         ) : (
           <div key={index}>
             <p>{message.reply.message}</p>
-            <ul>
-              {message.reply.matches.map((match, matchIndex) => (
-                <li key={`${match.opportunity.id}-${matchIndex}`}>
-                  <strong>{match.opportunity.name}</strong> ({match.strength}): {match.reason}
-                </li>
-              ))}
-            </ul>
+            <GrantResults matches={message.reply.matches} />
           </div>
         ),
       )}
