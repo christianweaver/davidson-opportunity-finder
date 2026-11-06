@@ -1,5 +1,6 @@
 import { createInterface } from "node:readline/promises";
-import { askOpportunityFinder, toHistoryText } from "../lib/ai.ts";
+import { askOpportunityFinder } from "../lib/ai.ts";
+import { toHistoryText } from "../lib/history.ts";
 
 function printMatch({ opportunity, reason, strength }) {
   const deadlines =

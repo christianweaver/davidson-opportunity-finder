@@ -142,8 +142,3 @@ export async function askOpportunityFinder(history: ChatTurn[]): Promise<ChatRep
     matches: [...toMatches(reply.direct, "direct"), ...toMatches(reply.loose, "loose")],
   };
 }
-
-export function toHistoryText(reply: ChatReply): string {
-  const names = reply.matches.map((match) => match.opportunity.name);
-  return `${reply.message} Grants shown: ${names.join(", ") || "none"}`;
-}
