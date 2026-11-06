@@ -2,7 +2,7 @@ import { createInterface } from "node:readline/promises";
 import { askOpportunityFinder } from "../lib/ai.ts";
 import { toHistoryText } from "../lib/history.ts";
 
-function printMatch({ opportunity, reason, strength }) {
+function printMatch({ opportunity, reason, score}) {
   const deadlines =
     opportunity.deadlines
       .map((d) => (d.label ? `${d.label}: ${d.text}` : d.text))
@@ -12,7 +12,7 @@ function printMatch({ opportunity, reason, strength }) {
       ? "Not listed"
       : opportunity.awardAmount.text;
 
-  console.log(`\n  [${strength}] ${opportunity.name}`);
+  console.log(`\n  [${score}] ${opportunity.name}`);
   console.log(`    Why: ${reason}`);
   console.log(`    Amount: ${amount}`);
   console.log(`    Last listed deadline: ${deadlines}`);

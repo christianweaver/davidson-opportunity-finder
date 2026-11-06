@@ -11,7 +11,7 @@ export type ChatTurn = {
 export type GrantMatch = {
   opportunity: Opportunity;
   reason: string;
-  strength: "direct" | "loose";
+  score: number;
 };
 
 export type ChatReply = {
@@ -22,10 +22,12 @@ export type ChatReply = {
 type RawPick = {
   id: string;
   reason: string;
+  score: number;
 };
 
 const MODEL = "gemini-3.5-flash-lite";
 const MAX_HISTORY_TURNS = 6;
+const MIN_SCORE = 20;
 
 const opportunities: Opportunity[] = JSON.parse(
   readFileSync(join(process.cwd(), "data/opportunities.json"), "utf8"),
@@ -37,23 +39,24 @@ const candidates = opportunities.map(
 
 const recordsById = new Map(opportunities.map((record) => [record.id, record]));
 
-const pick = {
-  type: "object",
-  properties: {
-    id: { type: "string" },
-    reason: { type: "string" },
-  },
-  required: ["id", "reason"],
-};
-
 const schema = {
   type: "object",
   properties: {
     message: { type: "string" },
-    direct: { type: "array", items: pick },
-    loose: { type: "array", items: pick },
+    matches: {
+        type: "array",
+        items: {
+          type: "object",
+          properties: {
+            id: { type: "string" },
+            reason: { type: "string" },
+            score: {type: "integer" },
+          },
+          required: ["id", "reason", "score"],
+        },
+    },
   },
-  required: ["message", "direct", "loose"],
+  required: ["message", "matches"],
 };
 
 const ai = new GoogleGenAI({});
@@ -79,24 +82,31 @@ what they mean by things like "this topic" or "that one".
 
 Fill in these fields:
 - "message": a short, conversational reply addressed to the student as "you".
-  Don't list or describe the grants shown in "direct" or "loose", since
-  they appear as cards below. If they ask about a specific record, answer from
-  that record. If something isn't in the records, say it isn't listed.
-- "direct": records where helping with the request is clearly within the
-  record's stated purpose.
-- "loose": records that don't mention this interest, but where a real project on
-  the student's topic could honestly meet the record's stated purpose.
-- If the student isn't asking for new options, leave "direct" and "loose" empty.
+  Don't list or describe the records in "matches", since they appear as cards 
+  below. If they ask about a specific record, answer from that record. If 
+  something isn't in the records, say it isn't listed.
+- "matches": every record that fits, each with a reason and a score.
+- If the student isn't asking for new options, leave "matches" empty.
+
+Write the reason first, then score how well each record fits, from 0 to 100:
+- 80-100: helping with this request is clearly within the record's stated purpose.
+- 50-79: fits part of what they asked, or fits with some reasonable framing.
+- 20-49: the record doesn't mention this interest, but a real project on the
+  student's topic could honestly meet its stated purpose.
+- Below 20: leave it out.
+Use the whole range, and give records that fit differently different scores.
+Score how well a record fits their interests, not whether they're eligible.
+
+How to guide the student:
+- If their message is too vague to match anything, ask a clarifying question first.
+- When you recommend options, sometimes encourage applying to more than one, since 
+    no single grant is guaranteed.
 
 Rules for choosing records:
 - Check the whole list, including research, travel, and independent project
   funds that don't name the student's topic.
 - When the student refines their request, check the whole list again, including
   records you didn't show before.
-- Match the kind of support the student wants. If they want to fund a project,
-  an internship-only grant is at most a loose match.
-- If a record only fits under a condition the student hasn't stated, such as a
-  specific country or region, it's a loose match. State the condition.
 - Don't invent details to make something fit. If you'd need to imagine a career,
   field, or purpose the student didn't mention, leave it out.
 - Personal or recreational requests don't fit career or academic funds. Returning
@@ -109,19 +119,31 @@ Rules for choosing records:
   connection is your own idea, say so.
 - When you mention a deadline, always call it the "last listed deadline" and
   point the student to the official link for current dates.
-- Only use IDs from the list. List each group from most to least relevant.
+- Only use IDs from the list. 
 `;
 }
 
-function toMatches(picks: RawPick[], strength: GrantMatch["strength"]): GrantMatch[] {
-  const matches: GrantMatch[] = [];
-
-  for (const { id, reason } of picks) {
-    const opportunity = recordsById.get(id);
-    if (opportunity) matches.push({ opportunity, reason, strength });
+function clampPoints(value: unknown, max: number): number {
+    if (typeof value !== "number" || Number.isNaN(value)) return 0;
+    return Math.max(0, Math.min(max, Math.round(value)));
   }
 
-  return matches;
+function toMatches(picks: RawPick[]): GrantMatch[] {
+  const seen = new Set<string>();
+  const matches: GrantMatch[] = [];
+
+  for (const pick of picks) {
+    const opportunity = recordsById.get(pick.id);
+    if (!opportunity || seen.has(pick.id)) continue;
+
+    const score = clampPoints(pick.score, 100);
+    if (score < MIN_SCORE) continue;
+
+    seen.add(pick.id);
+    matches.push({ opportunity, reason: pick.reason, score });
+  }
+
+  return matches.sort((a, b) => b.score - a.score);
 }
 
 export async function askOpportunityFinder(history: ChatTurn[]): Promise<ChatReply> {
@@ -139,6 +161,6 @@ export async function askOpportunityFinder(history: ChatTurn[]): Promise<ChatRep
 
   return {
     message: reply.message,
-    matches: [...toMatches(reply.direct, "direct"), ...toMatches(reply.loose, "loose")],
+    matches: toMatches(reply.matches ?? []),
   };
 }
