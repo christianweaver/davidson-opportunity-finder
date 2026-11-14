@@ -17,7 +17,7 @@ export default function GrantResults({ matches }: { matches: GrantMatch[] }) {
   const hiddenCount = matches.length - visible.length;
 
   return (
-    <section>
+    <section className="results">
       {visible.map((match, index) => (
         <GrantCard
           key={`${match.opportunity.id}-${index}`}
@@ -27,12 +27,12 @@ export default function GrantResults({ matches }: { matches: GrantMatch[] }) {
       ))}
 
       {hiddenCount > 0 && (
-        <button type="button" onClick={() => setShowAll(true)}>
+        <button type="button" className="text-button" onClick={() => setShowAll(true)}>
           Show {hiddenCount} more
         </button>
       )}
       {showAll && matches.length > INITIAL_COUNT && (
-        <button type="button" onClick={() => setShowAll(false)}>
+        <button type="button" className="text-button" onClick={() => setShowAll(false)}>
           Show fewer
         </button>
       )}
