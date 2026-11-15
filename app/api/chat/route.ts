@@ -1,6 +1,10 @@
-import { askOpportunityFinder, type ChatTurn } from "@/lib/ai";
+import type { ChatTurn } from "@/lib/ai";
+import { findOpportunities } from "@/lib/finder";
+
+export const maxDuration = 60;
 
 const MAX_MESSAGE_LENGTH = 2000;
+const MAX_ASSISTANT_LENGTH = 10000;
 
 function isValidHistory(history: unknown): history is ChatTurn[] {
   if (!Array.isArray(history) || history.length === 0) return false;
@@ -10,7 +14,7 @@ function isValidHistory(history: unknown): history is ChatTurn[] {
       (turn?.role === "Student" || turn?.role === "Assistant") &&
       typeof turn?.text === "string" &&
       turn.text.trim() !== "" &&
-      turn.text.length <= MAX_MESSAGE_LENGTH,
+      turn.text.length <= (turn.role === "Student" ? MAX_MESSAGE_LENGTH : MAX_ASSISTANT_LENGTH),
   );
 
   return validTurns && history[history.length - 1].role === "Student";
@@ -30,7 +34,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    const reply = await askOpportunityFinder(history);
+    const reply = await findOpportunities(history);
     return Response.json(reply);
   } catch (error) {
     console.error("Chat request failed:", error);

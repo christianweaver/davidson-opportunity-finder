@@ -37,7 +37,7 @@ while (true) {
     console.log(`\nAI: ${reply.message}`);
     reply.matches.forEach(printMatch);
 
-    history.push({ role: "Assistant", text: toHistoryText(reply) });
+    history.push({ role: "Assistant", text: reply.message });
   } catch (error) {
     history.pop();
     console.log(`\nSomething went wrong, so please try again: ${error.message}`);

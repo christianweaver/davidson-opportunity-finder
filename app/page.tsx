@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import type { ChatReply, ChatTurn } from "@/lib/ai";
+import type { ChatTurn } from "@/lib/ai";
+import type { FinderReply } from "@/lib/finder";
 import { toHistoryText } from "@/lib/history";
 import GrantResults from "@/components/GrantResults";
 
 type Message =
   | { role: "Student"; text: string }
-  | { role: "Assistant"; reply: ChatReply };
+  | { role: "Assistant"; reply: FinderReply };
 
 const EXAMPLES = [
   "I want to fund an independent project. Where should I start?",
@@ -104,7 +105,7 @@ export default function Home() {
               ) : (
                 <div key={index} className="reply">
                   <p className="reply-text">{message.reply.message}</p>
-                  <GrantResults matches={message.reply.matches} />
+                  <GrantResults reply={message.reply} />
                 </div>
               ),
             )}
@@ -116,7 +117,7 @@ export default function Home() {
                   <span />
                   <span />
                 </span>
-                Thinking...
+                Searching Davidson's website...
               </p>
             )}
             <div ref={transcriptEndRef} />

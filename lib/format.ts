@@ -36,3 +36,9 @@ export function matchLabel(score: number): string {
   if (score >= 50) return "Good match";
   return "Could work";
 }
+
+export function sourceLabel(source: "website" | "database"): string {
+    return source === "website"
+      ? "From Davidson's website"
+      : "From our saved database (last updated Feb 2025)";
+  }
