@@ -1,6 +1,7 @@
 import { askOpportunityFinder, type ChatTurn, type GrantMatch } from "./ai";
 import { formatAmount, formatDeadlines, formatEligibility } from "./format";
 import { researchOpportunities, type LoginNotice } from "./research";
+import type { Profile } from "./profile";
 
 export type OpportunityCard = {
   name: string;
@@ -68,11 +69,14 @@ function fromDatabase(match: GrantMatch): OpportunityCard {
   };
 }
 
-export async function findOpportunities(history: ChatTurn[]): Promise<FinderReply> {
-  const [research, database] = await Promise.allSettled([
-    researchOpportunities(history),
-    askOpportunityFinder(history),
-  ]);
+export async function findOpportunities(
+    history: ChatTurn[],
+    profile: Profile | null = null,
+  ): Promise<FinderReply> {
+    const [research, database] = await Promise.allSettled([
+      researchOpportunities(history, profile),
+      askOpportunityFinder(history, profile),
+    ]);
 
   if (research.status === "rejected" && database.status === "rejected") {
     console.error("Research failed:", research.reason);

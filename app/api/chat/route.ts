@@ -1,5 +1,6 @@
 import type { ChatTurn } from "@/lib/ai";
 import { findOpportunities } from "@/lib/finder";
+import { parseProfile } from "@/lib/profile";
 
 export const maxDuration = 60;
 
@@ -22,9 +23,10 @@ function isValidHistory(history: unknown): history is ChatTurn[] {
 
 export async function POST(request: Request) {
   let history: unknown;
+  let profile: unknown;
 
   try {
-    ({ history } = await request.json());
+    ({ history, profile } = await request.json());
   } catch {
     return Response.json({ error: "Request must be valid JSON." }, { status: 400 });
   }
@@ -34,7 +36,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    const reply = await findOpportunities(history);
+    const reply = await findOpportunities(history, parseProfile(profile));
     return Response.json(reply);
   } catch (error) {
     console.error("Chat request failed:", error);

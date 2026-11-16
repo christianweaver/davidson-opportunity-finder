@@ -5,6 +5,8 @@ import type { ChatTurn } from "@/lib/ai";
 import type { FinderReply } from "@/lib/finder";
 import { toHistoryText } from "@/lib/history";
 import GrantResults from "@/components/GrantResults";
+import Questionnaire from "@/components/Questionnaire";
+import { isProfileEmpty, profileSummary, type Profile } from "@/lib/profile";
 
 type Message =
   | { role: "Student"; text: string }
@@ -16,12 +18,16 @@ const EXAMPLES = [
   "I have a startup idea I want to test.",
 ];
 
+const STORAGE_KEY = "opportunity-finder-chat-v1";
+
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const transcriptEndRef = useRef<HTMLDivElement>(null);
+  const [hasLoaded, setHasLoaded] = useState(false);
+  const [profile, setProfile] = useState<Profile | null>(null);
 
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -31,7 +37,36 @@ export default function Home() {
     });
   }, [messages, isLoading]);
 
-  async function sendMessage(text: string) {
+  useEffect(() => {
+    try {
+      const saved = sessionStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const saved_data = JSON.parse(saved) as { messages?: Message[]; profile?: Profile | null };
+        const restored = saved_data.messages ?? [];
+        const last = restored[restored.length - 1];
+        if (last?.role === "Student") {
+          restored.pop();
+          setInput(last.text);
+        }
+        setMessages(restored);
+        setProfile(saved_data.profile ?? null);
+      }
+    } catch {
+      sessionStorage.removeItem(STORAGE_KEY);
+    }
+    setHasLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    if (!hasLoaded) return;
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ messages, profile }));
+    } catch {
+      // Storage can be full or blocked. The chat still works without it.
+    }
+  }, [messages, profile, hasLoaded]);
+
+  async function sendMessage(text: string, activeProfile: Profile | null = profile) {
     const trimmed = text.trim();
     if (!trimmed || isLoading) return;
 
@@ -52,7 +87,7 @@ export default function Home() {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ history }),
+        body: JSON.stringify({ history, profile: activeProfile }),
       });
       const data = await response.json();
 
@@ -73,6 +108,20 @@ export default function Home() {
     sendMessage(input);
   }
 
+  function startNewChat() {
+    setMessages([]);
+    setInput("");
+    setError(null);
+    setProfile(null);
+  }
+
+  function handleQuestionnaire(answers: Profile) {
+    const activeProfile = isProfileEmpty(answers) ? null : answers;
+    setProfile(activeProfile);
+    sendMessage(profileSummary(answers), activeProfile);
+  }
+
+  if (!hasLoaded) return null;
   const hasMessages = messages.length > 0;
 
   return (
@@ -82,6 +131,9 @@ export default function Home() {
           <div className="topbar-inner">
             <p className="eyebrow">Davidson College</p>
             <h1>Davidson Opportunity Finder</h1>
+            <button type="button" className="button" onClick={startNewChat}>
+              Home
+            </button>
           </div>
         </header>
       ) : (
@@ -92,6 +144,13 @@ export default function Home() {
             Tell us your interests and goals, and find Davidson grants and opportunities that fit.
           </p>
         </header>
+      )}
+
+      {!hasMessages && (
+        <>
+          <Questionnaire onSubmit={handleQuestionnaire} disabled={isLoading} />
+          <h2 className="own-question-title">Already have your own question?</h2>
+        </>
       )}
 
       {hasMessages && (

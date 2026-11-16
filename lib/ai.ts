@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { GoogleGenAI } from "@google/genai";
 import type { Opportunity } from "./types";
+import { profileForPrompt, type Profile } from "./profile";
 
 export type ChatTurn = {
   role: "Student" | "Assistant";
@@ -61,7 +62,7 @@ const schema = {
 
 const ai = new GoogleGenAI({});
 
-function buildPrompt(history: ChatTurn[]): string {
+function buildPrompt(history: ChatTurn[], profile: Profile | null): string {
   const conversation = history
     .map((turn) => `${turn.role}: ${turn.text}`)
     .join("\n");
@@ -72,6 +73,7 @@ ${JSON.stringify(candidates)}
 
 Conversation so far:
 ${conversation}
+${profile ? profileForPrompt(profile) : ""}
 
 You are a supportive guide helping Davidson College students explore
 opportunities. You complement conversations with faculty and staff rather than
@@ -119,6 +121,9 @@ Rules for choosing records:
   connection is your own idea, say so.
 - When you mention a deadline, always call it the "last listed deadline" and
   point the student to the official link for current dates.
+  - If the student names several interests, include records for each one, not only
+  records that fit all of them. Score records that fit more interests higher,
+  and say in the reason which interests each one fits.
 - Only use IDs from the list. 
 `;
 }
@@ -146,10 +151,11 @@ function toMatches(picks: RawPick[]): GrantMatch[] {
   return matches.sort((a, b) => b.score - a.score);
 }
 
-export async function askOpportunityFinder(history: ChatTurn[]): Promise<ChatReply> {
+export async function askOpportunityFinder( history: ChatTurn[],
+    profile: Profile | null = null, ): Promise<ChatReply> {
   const interaction = await ai.interactions.create({
     model: MODEL,
-    input: buildPrompt(history.slice(-MAX_HISTORY_TURNS)),
+    input: buildPrompt(history.slice(-MAX_HISTORY_TURNS), profile),
     response_format: {
       type: "text",
       mime_type: "application/json",
