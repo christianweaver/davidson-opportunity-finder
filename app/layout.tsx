@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 
-const sourceSerif = Source_Serif_4({
+const serif = Fraunces({
   subsets: ["latin"],
+  axes: ["SOFT", "opsz"],
   variable: "--font-serif",
   display: "swap",
 });
 
-const sourceSans = Source_Sans_3({
+const sans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${sourceSerif.variable} ${sourceSans.variable}`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <body>{children}</body>
     </html>
   );

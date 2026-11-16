@@ -122,7 +122,10 @@ export default function Questionnaire({ onSubmit, disabled }: Props) {
 
   return (
     <section className="questionnaire" aria-labelledby="questionnaire-title">
-      <h2 id="questionnaire-title">Answer a few questions to tailor your recommendations</h2>
+      <h2 id="questionnaire-title">Let&rsquo;s get to know you</h2>
+      <p className="questionnaire-intro">
+        A few quick questions help us find opportunities that fit you. Skip anything you like.
+      </p>
 
       <p className="questionnaire-progress">
         Question {step + 1} of {QUESTIONS.length}
@@ -174,6 +177,11 @@ export default function Questionnaire({ onSubmit, disabled }: Props) {
                       : toggle(question.field, option)
                   }
                 >
+                  {selected && (
+                    <span className="option-check" aria-hidden="true">
+                      ✓
+                    </span>
+                  )}
                   {option}
                 </button>
               );

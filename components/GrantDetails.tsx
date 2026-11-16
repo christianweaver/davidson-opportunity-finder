@@ -13,14 +13,14 @@ function StepList({ title, steps }: { title: string; steps: string[] }) {
   if (steps.length === 0) return null;
 
   return (
-    <>
+    <section className="details-section">
       <h3>{title}</h3>
-      <ol>
+      <ol className="steps">
         {steps.map((step, index) => (
           <li key={index}>{step}</li>
         ))}
       </ol>
-    </>
+    </section>
   );
 }
 
@@ -36,44 +36,63 @@ export default function GrantDetails({ card, onClose }: Props) {
   }, [card]);
 
   return (
-    <dialog ref={dialogRef} onClose={onClose}>
+    <dialog ref={dialogRef} className="details" onClose={onClose} aria-labelledby="details-title">
       {card && (
         <>
-          <h2>{card.name}</h2>
-          <p>{sourceLabel(card.source)}</p>
+          <div className="details-top">
+            <button type="button" className="details-close" onClick={onClose} aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 
-          <h3>Why it might fit</h3>
-          <p>{card.reason}</p>
+          <div className="details-body">
+            <h2 id="details-title">{card.name}</h2>
+            <p className="details-source">{sourceLabel(card.source)}</p>
 
-          <h3>About</h3>
-          <p>{card.summary}</p>
+            <section className="details-section">
+              <h3>Why it might fit</h3>
+              <p>{card.reason}</p>
+            </section>
 
-          <dl>
-            <dt>Amount</dt>
-            <dd>{card.amount ?? "Not listed"}</dd>
-            <dt>Deadlines</dt>
-            <dd>{card.deadlines ?? "Not listed"}</dd>
-            <dt>Eligibility</dt>
-            <dd>{card.eligibility ?? "Not listed"}</dd>
-            {card.contact && (
-              <>
-                <dt>Contact</dt>
-                <dd>{card.contact}</dd>
-              </>
-            )}
-          </dl>
+            <section className="details-section">
+              <h3>About</h3>
+              <p>{card.summary}</p>
+            </section>
 
-          <StepList title="Next steps" steps={card.nextSteps} />
-          <StepList title="How to apply" steps={card.howToApply} />
+            <dl className="facts">
+              <dt>Amount</dt>
+              <dd>{card.amount ?? "Not listed"}</dd>
+              <dt>Deadlines</dt>
+              <dd>{card.deadlines ?? "Not listed"}</dd>
+              <dt>Eligibility</dt>
+              <dd>{card.eligibility ?? "Not listed"}</dd>
+              {card.contact && (
+                <>
+                  <dt>Contact</dt>
+                  <dd>{card.contact}</dd>
+                </>
+              )}
+            </dl>
 
-          {card.sourceUrl && (
-            <a href={card.sourceUrl} target="_blank" rel="noopener noreferrer">
-              View the official page
-            </a>
-          )}
-          <button type="button" onClick={onClose}>
-            Close
-          </button>
+            <StepList title="Next steps" steps={card.nextSteps} />
+            <StepList title="How to apply" steps={card.howToApply} />
+
+            <div className="details-footer">
+              {card.sourceUrl && (
+                <a
+                  className="button button-secondary"
+                  href={card.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View the official page
+                </a>
+              )}
+              <button type="button" className="button button-primary" onClick={onClose}>
+                Close
+              </button>
+            </div>
+          </div>
         </>
       )}
     </dialog>

@@ -12,12 +12,6 @@ type Message =
   | { role: "Student"; text: string }
   | { role: "Assistant"; reply: FinderReply };
 
-const EXAMPLES = [
-  "I want to fund an independent project. Where should I start?",
-  "I'm interested in studying abroad next summer.",
-  "I have a startup idea I want to test.",
-];
-
 const STORAGE_KEY = "opportunity-finder-chat-v1";
 
 export default function Home() {
@@ -124,109 +118,113 @@ export default function Home() {
   if (!hasLoaded) return null;
   const hasMessages = messages.length > 0;
 
-  return (
-    <main className={hasMessages ? "app app-chat" : "app app-empty"}>
-      {hasMessages ? (
-        <header className="topbar">
-          <div className="topbar-inner">
-            <p className="eyebrow">Davidson College</p>
-            <h1>Davidson Opportunity Finder</h1>
-            <button type="button" className="button" onClick={startNewChat}>
-              Home
-            </button>
-          </div>
-        </header>
-      ) : (
+  const errorMessage = error && (
+    <p className="error" role="alert">
+      {error}
+    </p>
+  );
+
+  const composer = (
+    <form className="composer" onSubmit={handleSubmit}>
+      <div className="composer-row">
+        <label className="sr-only" htmlFor="prompt">
+          Ask about grants and opportunities
+        </label>
+        <input
+          id="prompt"
+          value={input}
+          onChange={(event) => setInput(event.target.value)}
+          placeholder={hasMessages ? "Ask a follow-up question..." : "Ask about grants and opportunities..."}
+          maxLength={2000}
+        />
+        <button className="button button-primary" type="submit" disabled={isLoading}>
+          Send
+        </button>
+      </div>
+    </form>
+  );
+
+  const footnote = (
+    <p className="footnote">
+      Grant information reflects a snapshot from early 2025 and may be out of date. Always
+      confirm details on the official pages.
+    </p>
+  );
+
+  if (!hasMessages) {
+    return (
+      <main className="app app-empty">
         <header className="hero">
-          <p className="eyebrow">Davidson College</p>
-          <h1>Davidson Opportunity Finder</h1>
+          <p className="eyebrow">For Davidson students</p>
+          <h1>
+            Find your next opportunity at <em>Davidson</em>
+          </h1>
           <p className="lede">
-            Tell us your interests and goals, and find Davidson grants and opportunities that fit.
+            Tell us a little about yourself, and we&rsquo;ll point you to grants, programs, and
+            experiences that fit what you want to do.
           </p>
         </header>
-      )}
 
-      {!hasMessages && (
-        <>
-          <Questionnaire onSubmit={handleQuestionnaire} disabled={isLoading} />
-          <h2 className="own-question-title">Already have your own question?</h2>
-        </>
-      )}
+        <Questionnaire onSubmit={handleQuestionnaire} disabled={isLoading} />
 
-      {hasMessages && (
-        <div className="thread">
-          <div className="thread-inner">
-            {messages.map((message, index) =>
-              message.role === "Student" ? (
-                <p key={index} className="bubble">
-                  {message.text}
-                </p>
-              ) : (
-                <div key={index} className="reply">
-                  <p className="reply-text">{message.reply.message}</p>
-                  <GrantResults reply={message.reply} />
-                </div>
-              ),
-            )}
+        <section className="own-question" aria-labelledby="own-question-title">
+          <h2 id="own-question-title">Already have your own question?</h2>
+          <p className="own-question-hint">Ask it directly and we&rsquo;ll take it from there.</p>
+          {composer}
+          {errorMessage}
+        </section>
 
-            {isLoading && (
-              <p className="thinking" aria-live="polite">
-                <span className="thinking-dots" aria-hidden="true">
-                  <span />
-                  <span />
-                  <span />
-                </span>
-                Searching Davidson's website...
-              </p>
-            )}
-            <div ref={transcriptEndRef} />
+        {footnote}
+      </main>
+    );
+  }
+
+  return (
+    <main className="app app-chat">
+      <header className="topbar">
+        <div className="topbar-inner">
+          <div className="topbar-title">
+            <p className="eyebrow">For Davidson students</p>
+            <h1>Davidson Opportunity Finder</h1>
           </div>
-        </div>
-      )}
-
-      {error && (
-        <p className="error" role="alert">
-          {error}
-        </p>
-      )}
-
-      <form className="composer" onSubmit={handleSubmit}>
-        <div className="composer-row">
-          <label className="sr-only" htmlFor="prompt">
-            Ask about grants and opportunities
-          </label>
-          <input
-            id="prompt"
-            value={input}
-            onChange={(event) => setInput(event.target.value)}
-            placeholder="Ask about grants and opportunities..."
-            maxLength={2000}
-          />
-          <button className="button button-primary" type="submit" disabled={isLoading}>
-            Send
+          <button type="button" className="button button-secondary button-small" onClick={startNewChat}>
+            Home
           </button>
         </div>
-      </form>
+      </header>
 
-      {!hasMessages && (
-        <div className="chips">
-          {EXAMPLES.map((example) => (
-            <button
-              key={example}
-              type="button"
-              className="chip"
-              onClick={() => sendMessage(example)}
-            >
-              {example}
-            </button>
-          ))}
+      <div className="thread">
+        <div className="thread-inner">
+          {messages.map((message, index) =>
+            message.role === "Student" ? (
+              <p key={index} className="bubble">
+                {message.text}
+              </p>
+            ) : (
+              <div key={index} className="reply">
+                <p className="reply-text">{message.reply.message}</p>
+                <GrantResults reply={message.reply} />
+              </div>
+            ),
+          )}
+
+          {isLoading && (
+            <p className="thinking" aria-live="polite">
+              <span className="thinking-dots" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </span>
+              Searching Davidson&rsquo;s website...
+            </p>
+          )}
+          <div ref={transcriptEndRef} />
         </div>
-      )}
+      </div>
 
-      <p className="footnote">
-        Grant information reflects a snapshot from early 2025 and may be out of date. Always
-        confirm details on the official pages.
-      </p>
+      {errorMessage}
+      {composer}
+      {footnote}
     </main>
   );
 }

@@ -16,39 +16,52 @@ export default function GrantResults({ reply }: { reply: FinderReply }) {
   const hiddenCount = cards.length - visible.length;
 
   return (
-    <section>
-      {notices.map((notice) => (
-        <p key={notice} role="status">
-          {notice}
-        </p>
-      ))}
-
-      {visible.map((card, index) => (
-        <GrantCard
-          key={`${card.name}-${index}`}
-          card={card}
-          onLearnMore={() => setSelected(card)}
-        />
-      ))}
-
-      {hiddenCount > 0 && (
-        <button type="button" onClick={() => setShowAll(true)}>
-          Show {hiddenCount} more
-        </button>
+    <section className="results">
+      {notices.length > 0 && (
+        <div className="notices">
+          {notices.map((notice) => (
+            <p key={notice} className="notice" role="status">
+              {notice}
+            </p>
+          ))}
+        </div>
       )}
-      {showAll && cards.length > INITIAL_COUNT && (
-        <button type="button" onClick={() => setShowAll(false)}>
-          Show fewer
-        </button>
+
+      {visible.length > 0 && (
+        <div className="card-grid">
+          {visible.map((card, index) => (
+            <GrantCard
+              key={`${card.name}-${index}`}
+              card={card}
+              onLearnMore={() => setSelected(card)}
+            />
+          ))}
+        </div>
+      )}
+
+      {(hiddenCount > 0 || (showAll && cards.length > INITIAL_COUNT)) && (
+        <div className="results-more">
+          {hiddenCount > 0 && (
+            <button type="button" className="button button-secondary" onClick={() => setShowAll(true)}>
+              Show {hiddenCount} more
+            </button>
+          )}
+          {showAll && cards.length > INITIAL_COUNT && (
+            <button type="button" className="button button-quiet" onClick={() => setShowAll(false)}>
+              Show fewer
+            </button>
+          )}
+        </div>
       )}
 
       {loginNotices.length > 0 && (
-        <div>
+        <div className="callout">
+          <p className="callout-label">Login required</p>
           <h3>Needs your Davidson login</h3>
-          <ul>
+          <ul className="callout-list">
             {loginNotices.map((notice) => (
               <li key={notice.url}>
-                <a href={notice.url} target="_blank" rel="noopener noreferrer">
+                <a className="link" href={notice.url} target="_blank" rel="noopener noreferrer">
                   {notice.name}
                 </a>
                 : {notice.note}
@@ -59,15 +72,20 @@ export default function GrantResults({ reply }: { reply: FinderReply }) {
       )}
 
       {handshakeSearches.length > 0 && (
-        <div>
+        <div className="callout">
           <h3>Try searching Handshake</h3>
           <p>Sign in with your Davidson login, then search for:</p>
-          <ul>
+          <ul className="term-chips">
             {handshakeSearches.map((term) => (
               <li key={term}>{term}</li>
             ))}
           </ul>
-          <a href="https://davidson.joinhandshake.com/login" target="_blank" rel="noopener noreferrer">
+          <a
+            className="button button-secondary button-small"
+            href="https://davidson.joinhandshake.com/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Open Handshake
           </a>
         </div>

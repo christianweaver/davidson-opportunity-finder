@@ -12,16 +12,16 @@ export default function GrantCard({ card, onLearnMore }: Props) {
 
   return (
     <article className="grant-card" data-source={card.source} style={shade}>
-      <p>{matchLabel(card.score)}</p>
+      <p className="match-pill">{matchLabel(card.score)}</p>
       <h3>{card.name}</h3>
-      <p>{card.reason}</p>
-      <p>{sourceLabel(card.source)}</p>
-      <div>
-        <button type="button" onClick={onLearnMore}>
+      <p className="grant-reason">{card.reason}</p>
+      <p className="grant-source">{sourceLabel(card.source)}</p>
+      <div className="grant-actions">
+        <button type="button" className="button button-primary button-small" onClick={onLearnMore}>
           Learn more
         </button>
         {card.sourceUrl && (
-          <a href={card.sourceUrl} target="_blank" rel="noopener noreferrer">
+          <a className="link" href={card.sourceUrl} target="_blank" rel="noopener noreferrer">
             Official page
           </a>
         )}
