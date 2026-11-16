@@ -25,7 +25,7 @@ export default function GrantResults({reply, profile, prefetch,}: {
   useEffect(() => {
     if (!prefetch) return;
     for (const card of cards) {
-      if (card.source === "website") loadDetails(card, profile).catch(() => {});
+      if (card.sourceUrl) loadDetails(card, profile).catch(() => {});
     }
   }, [prefetch, cards, profile]);
 

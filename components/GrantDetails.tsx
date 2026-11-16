@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { OpportunityDetails } from "@/lib/details";
 import type { OpportunityCard } from "@/lib/finder";
 import { sourceLabel } from "@/lib/format";
 import type { Profile } from "@/lib/profile";
-import { loadDetails } from "@/lib/details-client";
+import { loadDetails, type LoadedDetails } from "@/lib/details-client";
 
 type Props = {
   card: OpportunityCard | null;
@@ -32,7 +31,7 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [fetched, setFetched] = useState<{
     card: OpportunityCard;
-    details: OpportunityDetails | null;
+    result: LoadedDetails | null;
     failed: boolean;
   } | null>(null);
 
@@ -45,16 +44,16 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
   }, [card]);
 
   useEffect(() => {
-    if (!card || card.details) return;
+    if (!card) return;
 
     let cancelled = false;
 
     loadDetails(card, profile)
       .then((data) => {
-        if (!cancelled) setFetched({ card, details: data, failed: false });
+        if (!cancelled) setFetched({ card, result: data, failed: false });
       })
       .catch(() => {
-        if (!cancelled) setFetched({ card, details: null, failed: true });
+        if (!cancelled) setFetched({ card, result: null, failed: true });
       });
 
     return () => {
@@ -63,7 +62,8 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
   }, [card, profile]);
 
   const current = fetched?.card === card ? fetched : null;
-  const details = card?.details ?? current?.details ?? null;
+  const details = current?.result?.details ?? card?.details ?? null;
+  const from = current?.result?.from ?? (card?.details ? "database" : "website");
   const status: "ready" | "loading" | "error" = details
     ? "ready"
     : current?.failed
@@ -103,30 +103,34 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
 
             {details && (
               <>
-            <section className="details-section">
-              <h3>About</h3>
-              <p>{details.summary}</p>
-            </section>
+              <p className="details-source">
+                {from === "website" ? "Details from Davidson's website" : sourceLabel("database")}
+              </p>
 
-            <dl className="facts">
-              <dt>Amount</dt>
-              <dd>{details.amount ?? "Not listed"}</dd>
-              <dt>Deadlines</dt>
-              <dd>{details.deadlines ?? "Not listed"}</dd>
-              <dt>Eligibility</dt>
-              <dd>{details.eligibility ?? "Not listed"}</dd>
-              {details.contact && (
-                <>
-                  <dt>Contact</dt>
-                  <dd>{details.contact}</dd>
-                </>
-              )}
-            </dl>
+              <section className="details-section">
+                <h3>About</h3>
+                <p>{details.summary}</p>
+              </section>
 
-            <StepList title="Next steps" steps={details.nextSteps} />
-            <StepList title="How to apply" steps={details.howToApply} />
-            </>
-          )}
+              <dl className="facts">
+                <dt>Amount</dt>
+                <dd>{details.amount ?? "Not listed"}</dd>
+                <dt>Deadlines</dt>
+                <dd>{details.deadlines ?? "Not listed"}</dd>
+                <dt>Eligibility</dt>
+                <dd>{details.eligibility ?? "Not listed"}</dd>
+                {details.contact && (
+                  <>
+                    <dt>Contact</dt>
+                    <dd>{details.contact}</dd>
+                  </>
+                )}
+              </dl>
+
+              <StepList title="Next steps" steps={details.nextSteps} />
+              <StepList title="How to apply" steps={details.howToApply} />
+              </>
+            )}
 
             <div className="details-footer">
               {card.sourceUrl && (
