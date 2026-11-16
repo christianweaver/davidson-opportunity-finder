@@ -3,12 +3,13 @@ import type { FinderReply, OpportunityCard } from "./finder";
 const MAX_SUMMARY_CHARS = 300;
 
 function describeDatabaseCard(card: OpportunityCard): string {
+  const details = card.details;
   return [
     `- ${card.name} (from the saved database, last updated February 2025)`,
-    `  About: ${card.summary.slice(0, MAX_SUMMARY_CHARS)}`,
-    `  Amount: ${card.amount ?? "Not listed"}`,
-    `  Deadlines: ${card.deadlines ?? "Not listed"}`,
-    `  Eligibility: ${card.eligibility ?? "Not listed"}`,
+    `  About: ${(details?.summary ?? "").slice(0, MAX_SUMMARY_CHARS)}`,
+    `  Amount: ${details?.amount ?? "Not listed"}`,
+    `  Deadlines: ${details?.deadlines ?? "Not listed"}`,
+    `  Eligibility: ${details?.eligibility ?? "Not listed"}`,
     `  Link: ${card.sourceUrl ?? "Not listed"}`,
   ].join("\n");
 }

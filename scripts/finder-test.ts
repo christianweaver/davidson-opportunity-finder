@@ -13,7 +13,7 @@ async function main() {
   for (const card of reply.cards) {
     console.log(`[${card.score}] (${card.source}) ${card.name}`);
     console.log(`  Why: ${card.reason}`);
-    console.log(`  Deadlines: ${card.deadlines ?? "Not listed"}`);
+    console.log(`  Deadlines: ${card.details?.deadlines ?? "Not listed"}`);
     console.log(`  Source: ${card.sourceUrl ?? "Not listed"}\n`);
   }
 

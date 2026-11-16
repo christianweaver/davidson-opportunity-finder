@@ -2,20 +2,17 @@ import { askOpportunityFinder, type ChatTurn, type GrantMatch } from "./ai";
 import { formatAmount, formatDeadlines, formatEligibility } from "./format";
 import { researchOpportunities, type LoginNotice } from "./research";
 import type { Profile } from "./profile";
+import type { OpportunityDetails } from "./details";
+
+const DATABASE_SCORE_PENALTY = 10;
 
 export type OpportunityCard = {
   name: string;
   source: "website" | "database";
   sourceUrl: string | null;
-  summary: string;
   reason: string;
   score: number;
-  amount: string | null;
-  deadlines: string | null;
-  eligibility: string | null;
-  howToApply: string[];
-  nextSteps: string[];
-  contact: string | null;
+  details: OpportunityDetails | null;
 };
 
 export type FinderReply = {
@@ -57,15 +54,17 @@ function fromDatabase(match: GrantMatch): OpportunityCard {
     name: opportunity.name,
     source: "database",
     sourceUrl: opportunity.sourceUrl,
-    summary: opportunity.description,
     reason: match.reason,
-    score: match.score,
-    amount: formatAmount(opportunity),
-    deadlines: `Last listed: ${formatDeadlines(opportunity)}`,
-    eligibility: formatEligibility(opportunity),
-    howToApply: opportunity.applicationSteps,
-    nextSteps: [],
-    contact: opportunity.contact,
+    score: Math.max(0, match.score - DATABASE_SCORE_PENALTY),
+    details: {
+      summary: opportunity.description,
+      amount: formatAmount(opportunity),
+      deadlines: `Last listed: ${formatDeadlines(opportunity)}`,
+      eligibility: formatEligibility(opportunity),
+      howToApply: opportunity.applicationSteps,
+      nextSteps: [],
+      contact: opportunity.contact,
+    },
   };
 }
 
@@ -98,7 +97,9 @@ export async function findOpportunities(
     reply.message = message;
     reply.loginNotices = loginNotices;
     reply.handshakeSearches = handshakeSearches;
-    reply.cards.push(...opportunities.map((item) => ({ ...item, source: "website" as const })));
+        reply.cards.push(
+      ...opportunities.map((item) => ({ ...item, source: "website" as const, details: null })),
+    );
 
     console.log(
       `Research: ${pagesRead.length} pages, ${usage.inputTokens} tokens in, ${usage.outputTokens} out, about $${usage.estimatedCost.toFixed(4)}`,

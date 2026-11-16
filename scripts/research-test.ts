@@ -13,10 +13,6 @@ async function main() {
   for (const opportunity of reply.opportunities) {
     console.log(`[${opportunity.score}] ${opportunity.name}`);
     console.log(`  Why: ${opportunity.reason}`);
-    console.log(`  Amount: ${opportunity.amount ?? "Not listed"}`);
-    console.log(`  Deadlines: ${opportunity.deadlines ?? "Not listed"}`);
-    console.log(`  Eligibility: ${opportunity.eligibility ?? "Not listed"}`);
-    console.log(`  Next steps: ${opportunity.nextSteps.join(" → ") || "Not listed"}`);
     console.log(`  Source: ${opportunity.sourceUrl}\n`);
   }
 

@@ -203,7 +203,8 @@ export default function Home() {
             ) : (
               <div key={index} className="reply">
                 <p className="reply-text">{message.reply.message}</p>
-                <GrantResults reply={message.reply} />
+                <GrantResults reply={message.reply} profile={profile} 
+                  prefetch={index === messages.length - 1} />
               </div>
             ),
           )}

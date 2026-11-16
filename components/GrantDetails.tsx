@@ -1,11 +1,15 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import type { OpportunityDetails } from "@/lib/details";
 import type { OpportunityCard } from "@/lib/finder";
 import { sourceLabel } from "@/lib/format";
+import type { Profile } from "@/lib/profile";
+import { loadDetails } from "@/lib/details-client";
 
 type Props = {
   card: OpportunityCard | null;
+  profile: Profile | null;
   onClose: () => void;
 };
 
@@ -24,8 +28,13 @@ function StepList({ title, steps }: { title: string; steps: string[] }) {
   );
 }
 
-export default function GrantDetails({ card, onClose }: Props) {
+export default function GrantDetails({ card, profile, onClose }: Props) {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const [fetched, setFetched] = useState<{
+    card: OpportunityCard;
+    details: OpportunityDetails | null;
+    failed: boolean;
+  } | null>(null);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -34,6 +43,32 @@ export default function GrantDetails({ card, onClose }: Props) {
     if (card && !dialog.open) dialog.showModal();
     if (!card && dialog.open) dialog.close();
   }, [card]);
+
+  useEffect(() => {
+    if (!card || card.details) return;
+
+    let cancelled = false;
+
+    loadDetails(card, profile)
+      .then((data) => {
+        if (!cancelled) setFetched({ card, details: data, failed: false });
+      })
+      .catch(() => {
+        if (!cancelled) setFetched({ card, details: null, failed: true });
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [card, profile]);
+
+  const current = fetched?.card === card ? fetched : null;
+  const details = card?.details ?? current?.details ?? null;
+  const status: "ready" | "loading" | "error" = details
+    ? "ready"
+    : current?.failed
+      ? "error"
+      : "loading";
 
   return (
     <dialog ref={dialogRef} className="details" onClose={onClose} aria-labelledby="details-title">
@@ -49,33 +84,49 @@ export default function GrantDetails({ card, onClose }: Props) {
             <h2 id="details-title">{card.name}</h2>
             <p className="details-source">{sourceLabel(card.source)}</p>
 
+
             <section className="details-section">
               <h3>Why it might fit</h3>
               <p>{card.reason}</p>
             </section>
 
+            {status === "loading" && (
+              <p className="details-status" role="status">
+                Loading details...
+              </p>
+            )}
+            {status === "error" && (
+              <p className="details-status" role="alert">
+                Couldn&apos;t load the details. You can still check the official page below.
+              </p>
+            )}
+
+            {details && (
+              <>
             <section className="details-section">
               <h3>About</h3>
-              <p>{card.summary}</p>
+              <p>{details.summary}</p>
             </section>
 
             <dl className="facts">
               <dt>Amount</dt>
-              <dd>{card.amount ?? "Not listed"}</dd>
+              <dd>{details.amount ?? "Not listed"}</dd>
               <dt>Deadlines</dt>
-              <dd>{card.deadlines ?? "Not listed"}</dd>
+              <dd>{details.deadlines ?? "Not listed"}</dd>
               <dt>Eligibility</dt>
-              <dd>{card.eligibility ?? "Not listed"}</dd>
-              {card.contact && (
+              <dd>{details.eligibility ?? "Not listed"}</dd>
+              {details.contact && (
                 <>
                   <dt>Contact</dt>
-                  <dd>{card.contact}</dd>
+                  <dd>{details.contact}</dd>
                 </>
               )}
             </dl>
 
-            <StepList title="Next steps" steps={card.nextSteps} />
-            <StepList title="How to apply" steps={card.howToApply} />
+            <StepList title="Next steps" steps={details.nextSteps} />
+            <StepList title="How to apply" steps={details.howToApply} />
+            </>
+          )}
 
             <div className="details-footer">
               {card.sourceUrl && (

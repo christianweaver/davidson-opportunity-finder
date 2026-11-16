@@ -1,19 +1,33 @@
 "use client";
 
-import { useState } from "react";
 import type { FinderReply, OpportunityCard } from "@/lib/finder";
 import GrantCard from "./GrantCard";
 import GrantDetails from "./GrantDetails";
+import type { Profile } from "@/lib/profile";
+import { useEffect, useState } from "react";
+import { loadDetails } from "@/lib/details-client";
 
 const INITIAL_COUNT = 3;
 
-export default function GrantResults({ reply }: { reply: FinderReply }) {
+export default function GrantResults({reply, profile, prefetch,}: {
+  reply: FinderReply;
+  profile: Profile | null;
+  prefetch: boolean;
+}) {
   const [showAll, setShowAll] = useState(false);
   const [selected, setSelected] = useState<OpportunityCard | null>(null);
 
   const { cards, loginNotices, handshakeSearches, notices } = reply;
   const visible = showAll ? cards : cards.slice(0, INITIAL_COUNT);
   const hiddenCount = cards.length - visible.length;
+
+
+  useEffect(() => {
+    if (!prefetch) return;
+    for (const card of cards) {
+      if (card.source === "website") loadDetails(card, profile).catch(() => {});
+    }
+  }, [prefetch, cards, profile]);
 
   return (
     <section className="results">
@@ -91,7 +105,7 @@ export default function GrantResults({ reply }: { reply: FinderReply }) {
         </div>
       )}
 
-      <GrantDetails card={selected} onClose={() => setSelected(null)} />
+      <GrantDetails card={selected} profile={profile} onClose={() => setSelected(null)} />
     </section>
   );
 }
