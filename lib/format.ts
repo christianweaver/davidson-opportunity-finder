@@ -1,3 +1,4 @@
+import type { OpportunityCard } from "./finder";
 import type { ClassYear, Opportunity } from "./types";
 
 const YEAR_LABELS: Record<ClassYear, string> = {
@@ -37,8 +38,14 @@ export function matchLabel(score: number): string {
   return "Could work";
 }
 
-export function sourceLabel(source: "website" | "database"): string {
-    return source === "website"
-      ? "From Davidson's website"
-      : "From our saved database (last updated Feb 2025)";
-  }
+export const DATABASE_NOTE = "From our saved database (last updated Feb 2025)";
+
+// Database matches that link to an official page get their details scraped from
+// that page, so only cards with no page actually rely on the saved database.
+export function usesDatabaseOnly(card: OpportunityCard): boolean {
+  return card.source === "database" && !card.sourceUrl;
+}
+
+export function sourceLabel(card: OpportunityCard): string {
+  return usesDatabaseOnly(card) ? DATABASE_NOTE : "From Davidson's website";
+}

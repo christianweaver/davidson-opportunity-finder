@@ -252,11 +252,47 @@ function buildReply(
   };
 }
 
+export type ProgressHandler = (text: string) => void;
+
+const SMALL_WORDS = new Set(["and", "or", "of", "the", "a", "an", "to", "in", "for", "on", "at"]);
+const ACRONYMS = new Set(["nsf", "reu", "stem", "dri", "ai", "us", "usa", "faq", "nih"]);
+
+function pageLabel(raw: string): string {
+  try {
+    const url = new URL(raw);
+    const slug = url.pathname.split("/").filter(Boolean).pop();
+    if (!slug) return url.hostname.replace(/^www\./, "");
+    return decodeURIComponent(slug)
+      .replace(/\.[a-z]+$/i, "")
+      .split(/[-_]+/)
+      .filter(Boolean)
+      .map((word, index) => {
+        const lower = word.toLowerCase();
+        if (ACRONYMS.has(lower)) return lower.toUpperCase();
+        if (index > 0 && SMALL_WORDS.has(lower)) return lower;
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      })
+      .join(" ");
+  } catch {
+    return "a Davidson page";
+  }
+}
+
+function describeReads(urls: string[]): string {
+  const labels = [...new Set(urls.map(pageLabel))];
+  if (labels.length === 0) return "Reading more pages";
+  const shown = labels.slice(0, 2).map((label) => `\u201c${label}\u201d`);
+  const extra = labels.length - shown.length;
+  const more = extra > 0 ? ` and ${extra} more` : "";
+  return `Reading ${shown.join(", ")}${more}`;
+}
+
 export async function researchOpportunities(
-    history: ChatTurn[],
-    profile: Profile | null = null,
-  ): Promise<ResearchReply> {
-    const client = new Anthropic();
+  history: ChatTurn[],
+  profile: Profile | null = null,
+  onProgress: ProgressHandler = () => {},
+): Promise<ResearchReply> {
+  const client = new Anthropic();
   const messages = toMessages(history);
   const pagesRead = new Set<string>();
   const loginLinks = new Map<string, string>();
@@ -282,6 +318,7 @@ export async function researchOpportunities(
     }
   }
 
+  onProgress("Opening Davidson\u2019s Catalyst and grants pages");
   const seedResults = await Promise.all(SEED_URLS.map((url) => readPage(url)));
   seedResults.forEach(recordResult);
   const seedText = seedResults.map(formatResult).join("\n\n---\n\n");
@@ -294,6 +331,14 @@ export async function researchOpportunities(
 
   for (let step = 0; step < MAX_STEPS; step++) {
     const mustAnswer = pageReads >= MAX_PAGE_READS || step === MAX_STEPS - 1;
+
+    onProgress(
+      step === 0
+        ? "Deciding which sections fit what you\u2019re looking for"
+        : mustAnswer
+          ? `Picking the best matches from ${pagesRead.size} pages`
+          : `Reviewing ${pagesRead.size} pages so far`,
+    );
 
     const stepStarted = Date.now();
     const response = await client.messages.create({
@@ -332,6 +377,10 @@ export async function researchOpportunities(
 
     const toolUses = response.content.filter(
       (block): block is Anthropic.ToolUseBlock => block.type === "tool_use",
+    );
+
+    onProgress(
+      describeReads(toolUses.map((block) => String((block.input as { url?: unknown }).url ?? ""))),
     );
 
     const readsStarted = Date.now();

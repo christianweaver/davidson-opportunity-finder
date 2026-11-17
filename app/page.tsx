@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import type { ChatTurn } from "@/lib/ai";
-import type { FinderReply } from "@/lib/finder";
+import type { ChatEvent, FinderReply } from "@/lib/finder";
 import { toHistoryText } from "@/lib/history";
 import GrantResults from "@/components/GrantResults";
 import Questionnaire from "@/components/Questionnaire";
@@ -13,11 +13,81 @@ type Message =
   | { role: "Assistant"; reply: FinderReply };
 
 const STORAGE_KEY = "opportunity-finder-chat-v1";
+const MAX_VISIBLE_STEPS = 4;
+
+async function readChatStream(
+  response: Response,
+  onProgress: (text: string) => void,
+): Promise<FinderReply> {
+  if (!response.ok || !response.body) {
+    const data = await response.json().catch(() => ({}));
+    throw new Error(data.error ?? "Something went wrong.");
+  }
+
+  const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
+  let buffer = "";
+
+  while (true) {
+    const { value, done } = await reader.read();
+    if (value) buffer += value;
+
+    const lines = buffer.split("\n");
+    buffer = done ? "" : (lines.pop() ?? "");
+
+    for (const line of lines) {
+      if (!line.trim()) continue;
+      const event = JSON.parse(line) as ChatEvent;
+      if (event.type === "progress") onProgress(event.text);
+      if (event.type === "error") throw new Error(event.error);
+      if (event.type === "result") return event.reply;
+    }
+
+    if (done) throw new Error("The connection closed before the answer arrived.");
+  }
+}
+
+function ProgressSteps({ steps }: { steps: string[] }) {
+  const visible = steps.length > 0 ? steps.slice(-MAX_VISIBLE_STEPS) : ["Getting started"];
+  const current = visible[visible.length - 1];
+
+  return (
+    <div className="progress-steps">
+      <ol>
+        {visible.map((step, index) => {
+          const isCurrent = index === visible.length - 1;
+          return (
+            <li
+              key={steps.length - visible.length + index}
+              className={isCurrent ? "progress-step is-current" : "progress-step is-done"}
+            >
+              <span className="progress-step-icon" aria-hidden="true">
+                {isCurrent ? (
+                  <span className="thinking-dots">
+                    <span />
+                    <span />
+                    <span />
+                  </span>
+                ) : (
+                  "\u2713"
+                )}
+              </span>
+              <span className="progress-step-text">{step}</span>
+            </li>
+          );
+        })}
+      </ol>
+      <p className="sr-only" aria-live="polite">
+        {current}
+      </p>
+    </div>
+  );
+}
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [progress, setProgress] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   const transcriptEndRef = useRef<HTMLDivElement>(null);
   const [hasLoaded, setHasLoaded] = useState(false);
@@ -29,7 +99,7 @@ export default function Home() {
       behavior: reduceMotion ? "auto" : "smooth",
       block: "end",
     });
-  }, [messages, isLoading]);
+  }, [messages, isLoading, progress]);
 
   useEffect(() => {
     try {
@@ -68,6 +138,7 @@ export default function Home() {
     setMessages(updated);
     setInput("");
     setError(null);
+    setProgress([]);
     setIsLoading(true);
 
     const history = updated.map(
@@ -83,11 +154,11 @@ export default function Home() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ history, profile: activeProfile }),
       });
-      const data = await response.json();
+      const reply = await readChatStream(response, (text) =>
+        setProgress((steps) => (steps[steps.length - 1] === text ? steps : [...steps, text])),
+      );
 
-      if (!response.ok) throw new Error(data.error ?? "Something went wrong.");
-
-      setMessages([...updated, { role: "Assistant", reply: data }]);
+      setMessages([...updated, { role: "Assistant", reply }]);
     } catch (err) {
       setMessages(messages);
       setInput(trimmed);
@@ -146,8 +217,7 @@ export default function Home() {
 
   const footnote = (
     <p className="footnote">
-      Grant information reflects a snapshot from early 2025 and may be out of date. Always
-      confirm details on the official pages.
+      Always confirm details on the official pages before you apply.
     </p>
   );
 
@@ -209,16 +279,7 @@ export default function Home() {
             ),
           )}
 
-          {isLoading && (
-            <p className="thinking" aria-live="polite">
-              <span className="thinking-dots" aria-hidden="true">
-                <span />
-                <span />
-                <span />
-              </span>
-              Searching Davidson&rsquo;s website...
-            </p>
-          )}
+          {isLoading && <ProgressSteps steps={progress} />}
           <div ref={transcriptEndRef} />
         </div>
       </div>

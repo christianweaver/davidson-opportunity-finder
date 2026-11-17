@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { OpportunityCard } from "@/lib/finder";
-import { sourceLabel } from "@/lib/format";
+import { DATABASE_NOTE, sourceLabel } from "@/lib/format";
 import type { Profile } from "@/lib/profile";
 import { loadDetails, type LoadedDetails } from "@/lib/details-client";
 
@@ -24,6 +24,47 @@ function StepList({ title, steps }: { title: string; steps: string[] }) {
         ))}
       </ol>
     </section>
+  );
+}
+
+function DetailsSkeleton() {
+  return (
+    <div className="details-loading" role="status">
+      <p className="details-loading-label">
+        <span className="thinking-dots" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </span>
+        Reading the official page for amounts, deadlines, and eligibility
+      </p>
+
+      <div aria-hidden="true">
+        <section className="details-section">
+          <h3>About</h3>
+          <span className="skeleton-line" />
+          <span className="skeleton-line" />
+          <span className="skeleton-line skeleton-line-short" />
+        </section>
+
+        <dl className="facts">
+          {["Amount", "Deadlines", "Eligibility"].map((label) => (
+            <div key={label} className="facts-row">
+              <dt>{label}</dt>
+              <dd>
+                <span className="skeleton-line skeleton-line-fact" />
+              </dd>
+            </div>
+          ))}
+        </dl>
+
+        <section className="details-section">
+          <h3>Next steps</h3>
+          <span className="skeleton-line" />
+          <span className="skeleton-line skeleton-line-short" />
+        </section>
+      </div>
+    </div>
   );
 }
 
@@ -62,8 +103,11 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
   }, [card, profile]);
 
   const current = fetched?.card === card ? fetched : null;
-  const details = current?.result?.details ?? card?.details ?? null;
-  const from = current?.result?.from ?? (card?.details ? "database" : "website");
+  // Cards with an official page wait for the scraped details; the saved database
+  // is only used when there's no page or the page couldn't be read.
+  const fallback = card && !card.sourceUrl ? card.details : null;
+  const details = current?.result?.details ?? fallback;
+  const from = current?.result?.from ?? (fallback ? "database" : "website");
   const status: "ready" | "loading" | "error" = details
     ? "ready"
     : current?.failed
@@ -82,7 +126,7 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
 
           <div className="details-body">
             <h2 id="details-title">{card.name}</h2>
-            <p className="details-source">{sourceLabel(card.source)}</p>
+            <p className="details-source">{sourceLabel(card)}</p>
 
 
             <section className="details-section">
@@ -90,11 +134,7 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
               <p>{card.reason}</p>
             </section>
 
-            {status === "loading" && (
-              <p className="details-status" role="status">
-                Loading details...
-              </p>
-            )}
+            {status === "loading" && <DetailsSkeleton />}
             {status === "error" && (
               <p className="details-status" role="alert">
                 Couldn&apos;t load the details. You can still check the official page below.
@@ -104,7 +144,7 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
             {details && (
               <>
               <p className="details-source">
-                {from === "website" ? "Details from Davidson's website" : sourceLabel("database")}
+                {from === "website" ? "Details from Davidson's website" : DATABASE_NOTE}
               </p>
 
               <section className="details-section">

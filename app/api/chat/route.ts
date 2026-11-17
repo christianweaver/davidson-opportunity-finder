@@ -1,5 +1,5 @@
 import type { ChatTurn } from "@/lib/ai";
-import { findOpportunities } from "@/lib/finder";
+import { findOpportunities, type ChatEvent } from "@/lib/finder";
 import { parseProfile } from "@/lib/profile";
 
 export const maxDuration = 60;
@@ -35,14 +35,33 @@ export async function POST(request: Request) {
     return Response.json({ error: "Please send a valid message." }, { status: 400 });
   }
 
-  try {
-    const reply = await findOpportunities(history, parseProfile(profile));
-    return Response.json(reply);
-  } catch (error) {
-    console.error("Chat request failed:", error);
-    return Response.json(
-      { error: "Something went wrong. Please try again in a minute." },
-      { status: 500 },
-    );
-  }
+  const turns = history;
+  const encoder = new TextEncoder();
+
+  // Streams one JSON event per line: progress updates, then a result or an error.
+  const stream = new ReadableStream({
+    async start(controller) {
+      const send = (event: ChatEvent) =>
+        controller.enqueue(encoder.encode(`${JSON.stringify(event)}\n`));
+
+      try {
+        const reply = await findOpportunities(turns, parseProfile(profile), (text) =>
+          send({ type: "progress", text }),
+        );
+        send({ type: "result", reply });
+      } catch (error) {
+        console.error("Chat request failed:", error);
+        send({ type: "error", error: "Something went wrong. Please try again in a minute." });
+      } finally {
+        controller.close();
+      }
+    },
+  });
+
+  return new Response(stream, {
+    headers: {
+      "Content-Type": "application/x-ndjson; charset=utf-8",
+      "Cache-Control": "no-cache, no-transform",
+    },
+  });
 }

@@ -1,4 +1,5 @@
 import type { FinderReply, OpportunityCard } from "./finder";
+import { usesDatabaseOnly } from "./format";
 
 const MAX_SUMMARY_CHARS = 300;
 
@@ -15,8 +16,8 @@ function describeDatabaseCard(card: OpportunityCard): string {
 }
 
 export function toHistoryText(reply: FinderReply): string {
-  const website = reply.cards.filter((card) => card.source === "website");
-  const database = reply.cards.filter((card) => card.source === "database");
+  const website = reply.cards.filter((card) => !usesDatabaseOnly(card));
+  const database = reply.cards.filter(usesDatabaseOnly);
   const parts = [reply.message];
 
   if (website.length > 0) {

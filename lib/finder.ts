@@ -1,6 +1,6 @@
 import { askOpportunityFinder, type ChatTurn, type GrantMatch } from "./ai";
 import { formatAmount, formatDeadlines, formatEligibility } from "./format";
-import { researchOpportunities, type LoginNotice } from "./research";
+import { researchOpportunities, type LoginNotice, type ProgressHandler } from "./research";
 import type { Profile } from "./profile";
 import type { OpportunityDetails } from "./details";
 
@@ -22,6 +22,11 @@ export type FinderReply = {
   handshakeSearches: string[];
   notices: string[];
 };
+
+export type ChatEvent =
+  | { type: "progress"; text: string }
+  | { type: "result"; reply: FinderReply }
+  | { type: "error"; error: string };
 
 const NAME_STOP_WORDS = new Set([
   "the", "and", "of", "for", "in", "a", "grant", "grants", "fund", "funds",
@@ -69,13 +74,14 @@ function fromDatabase(match: GrantMatch): OpportunityCard {
 }
 
 export async function findOpportunities(
-    history: ChatTurn[],
-    profile: Profile | null = null,
-  ): Promise<FinderReply> {
-    const [research, database] = await Promise.allSettled([
-      researchOpportunities(history, profile),
-      askOpportunityFinder(history, profile),
-    ]);
+  history: ChatTurn[],
+  profile: Profile | null = null,
+  onProgress: ProgressHandler = () => {},
+): Promise<FinderReply> {
+  const [research, database] = await Promise.allSettled([
+    researchOpportunities(history, profile, onProgress),
+    askOpportunityFinder(history, profile),
+  ]);
 
   if (research.status === "rejected" && database.status === "rejected") {
     console.error("Research failed:", research.reason);
@@ -127,14 +133,6 @@ export async function findOpportunities(
     } else {
         console.error("Database check failed:", database.reason);
     }
-
-  const databaseCount = reply.cards.filter((card) => card.source === "database").length;
-  if (databaseCount > 0 && research.status === "fulfilled") {
-    const options = databaseCount === 1 ? "option" : "options";
-    reply.notices.push(
-      `I also found ${databaseCount} more ${options} in our saved database, which was last updated in February 2025.`,
-    );
-  }
 
   reply.cards.sort((a, b) => b.score - a.score);
   return reply;

@@ -601,6 +601,64 @@ a {
   }
 }
 
+.progress-steps {
+  align-self: flex-start;
+  width: min(100%, 30rem);
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.progress-steps ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  list-style: none;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  line-height: 1.4;
+  animation: step-in 0.25s ease-out;
+}
+
+.progress-step.is-done {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.progress-step.is-current {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.progress-step-icon {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.progress-step-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@keyframes step-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
 .error {
   padding: 0.75rem 0.95rem;
   border: 1px solid var(--color-danger-line);
@@ -927,6 +985,62 @@ a {
   font-weight: 700;
 }
 
+.details-loading-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: var(--space-5);
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--color-muted-on-tint);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.details-loading .details-section h3,
+.details-loading .facts dt {
+  opacity: 0.55;
+}
+
+.facts-row {
+  display: contents;
+}
+
+.skeleton-line {
+  display: block;
+  height: 0.8rem;
+  margin: 0.55rem 0;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(
+    90deg,
+    var(--color-line) 0%,
+    var(--color-surface) 50%,
+    var(--color-line) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.skeleton-line-short {
+  width: 60%;
+}
+
+.skeleton-line-fact {
+  width: 70%;
+  margin: 0.3rem 0;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
 .details-footer {
   display: flex;
   flex-wrap: wrap;
@@ -997,6 +1111,8 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   .thinking-dots span,
+  .progress-step,
+  .skeleton-line,
   .grant-card,
   .progress-bar-fill {
     animation: none;
