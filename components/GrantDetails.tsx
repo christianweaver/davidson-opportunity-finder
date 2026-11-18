@@ -31,7 +31,7 @@ function DetailsSkeleton() {
   return (
     <div className="details-loading" role="status">
       <p className="details-loading-label">
-        <span className="thinking-dots" aria-hidden="true">
+        <span className="climb" aria-hidden="true">
           <span />
           <span />
           <span />
@@ -175,15 +175,15 @@ export default function GrantDetails({ card, profile, onClose }: Props) {
             <div className="details-footer">
               {card.sourceUrl && (
                 <a
-                  className="button button-secondary"
+                  className="button button-primary"
                   href={card.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View the official page
+                  View the official page <span aria-hidden="true">&#8599;</span>
                 </a>
               )}
-              <button type="button" className="button button-primary" onClick={onClose}>
+              <button type="button" className="button" onClick={onClose}>
                 Close
               </button>
             </div>

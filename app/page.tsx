@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import type { ChatTurn } from "@/lib/ai";
 import type { ChatEvent, FinderReply } from "@/lib/finder";
 import { toHistoryText } from "@/lib/history";
+import Brand from "@/components/Brand";
 import GrantResults from "@/components/GrantResults";
 import Questionnaire from "@/components/Questionnaire";
 import { isProfileEmpty, profileSummary, type Profile } from "@/lib/profile";
@@ -62,7 +63,7 @@ function ProgressSteps({ steps }: { steps: string[] }) {
             >
               <span className="progress-step-icon" aria-hidden="true">
                 {isCurrent ? (
-                  <span className="thinking-dots">
+                  <span className="climb">
                     <span />
                     <span />
                     <span />
@@ -205,11 +206,15 @@ export default function Home() {
           id="prompt"
           value={input}
           onChange={(event) => setInput(event.target.value)}
-          placeholder={hasMessages ? "Ask a follow-up question..." : "Ask about grants and opportunities..."}
+          placeholder={
+            hasMessages
+              ? "Ask a follow-up\u2026"
+              : "e.g. grants for summer research"
+          }
           maxLength={2000}
         />
         <button className="button button-primary" type="submit" disabled={isLoading}>
-          Send
+          {hasMessages ? "Send" : "Ask"}
         </button>
       </div>
     </form>
@@ -224,22 +229,23 @@ export default function Home() {
   if (!hasMessages) {
     return (
       <main className="app app-empty">
-        <header className="hero">
-          <p className="eyebrow">For Davidson students</p>
-          <h1>
-            Find your next opportunity at <em>Davidson</em>
-          </h1>
-          <p className="lede">
-            Tell us a little about yourself, and we&rsquo;ll point you to grants, programs, and
-            experiences that fit what you want to do.
-          </p>
+        <header className="site-header">
+          <Brand />
+          <span className="site-header-note">For Davidson students</span>
         </header>
+
+        <div className="hero">
+          <h1>What&rsquo;s your next step?</h1>
+          <p className="lede">
+            Answer a few quick questions and we&rsquo;ll match you with Davidson grants, research,
+            internships, and programs that fit what you want to do.
+          </p>
+        </div>
 
         <Questionnaire onSubmit={handleQuestionnaire} disabled={isLoading} />
 
         <section className="own-question" aria-labelledby="own-question-title">
-          <h2 id="own-question-title">Already have your own question?</h2>
-          <p className="own-question-hint">Ask it directly and we&rsquo;ll take it from there.</p>
+          <h2 id="own-question-title">Or ask in your own words</h2>
           {composer}
           {errorMessage}
         </section>
@@ -253,12 +259,11 @@ export default function Home() {
     <main className="app app-chat">
       <header className="topbar">
         <div className="topbar-inner">
-          <div className="topbar-title">
-            <p className="eyebrow">For Davidson students</p>
-            <h1>Davidson Opportunity Finder</h1>
-          </div>
-          <button type="button" className="button button-secondary button-small" onClick={startNewChat}>
-            Home
+          <h1 className="topbar-title">
+            <Brand />
+          </h1>
+          <button type="button" className="button button-small" onClick={startNewChat}>
+            Start over
           </button>
         </div>
       </header>
@@ -273,8 +278,11 @@ export default function Home() {
             ) : (
               <div key={index} className="reply">
                 <p className="reply-text">{message.reply.message}</p>
-                <GrantResults reply={message.reply} profile={profile} 
-                  prefetch={index === messages.length - 1} />
+                <GrantResults
+                  reply={message.reply}
+                  profile={profile}
+                  prefetch={index === messages.length - 1}
+                />
               </div>
             ),
           )}

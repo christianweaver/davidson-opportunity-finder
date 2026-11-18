@@ -32,10 +32,15 @@ export function formatEligibility(opportunity: Opportunity): string {
   return parts.join(" ") || "Not listed. Check the official page.";
 }
 
+// 1–3, shown as how many steps of the match meter are filled in.
+export function matchLevel(score: number): 1 | 2 | 3 {
+  if (score >= 80) return 3;
+  if (score >= 50) return 2;
+  return 1;
+}
+
 export function matchLabel(score: number): string {
-  if (score >= 80) return "Strong match";
-  if (score >= 50) return "Good match";
-  return "Could work";
+  return ["Could work", "Good match", "Strong match"][matchLevel(score) - 1];
 }
 
 export const DATABASE_NOTE = "From our saved database (last updated Feb 2025)";

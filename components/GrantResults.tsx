@@ -56,7 +56,7 @@ export default function GrantResults({reply, profile, prefetch,}: {
       {(hiddenCount > 0 || (showAll && cards.length > INITIAL_COUNT)) && (
         <div className="results-more">
           {hiddenCount > 0 && (
-            <button type="button" className="button button-secondary" onClick={() => setShowAll(true)}>
+            <button type="button" className="button" onClick={() => setShowAll(true)}>
               Show {hiddenCount} more
             </button>
           )}
@@ -70,7 +70,6 @@ export default function GrantResults({reply, profile, prefetch,}: {
 
       {loginNotices.length > 0 && (
         <div className="callout">
-          <p className="callout-label">Login required</p>
           <h3>Needs your Davidson login</h3>
           <ul className="callout-list">
             {loginNotices.map((notice) => (
@@ -95,12 +94,12 @@ export default function GrantResults({reply, profile, prefetch,}: {
             ))}
           </ul>
           <a
-            className="button button-secondary button-small"
+            className="button button-small"
             href="https://davidson.joinhandshake.com/login"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open Handshake
+            Open Handshake <span aria-hidden="true">&#8599;</span>
           </a>
         </div>
       )}

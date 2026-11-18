@@ -122,29 +122,35 @@ export default function Questionnaire({ onSubmit, disabled }: Props) {
 
   return (
     <section className="questionnaire" aria-labelledby="questionnaire-title">
-      <h2 id="questionnaire-title">Let&rsquo;s get to know you</h2>
-      <p className="questionnaire-intro">
-        A few quick questions help us find opportunities that fit you. Skip anything you like.
-      </p>
+      <h2 id="questionnaire-title" className="sr-only">
+        A few quick questions
+      </h2>
 
-      <p className="questionnaire-progress">
-        Question {step + 1} of {QUESTIONS.length}
-      </p>
-      <div
-        className="progress-bar"
-        role="progressbar"
-        aria-label="Questionnaire progress"
-        aria-valuemin={1}
-        aria-valuemax={QUESTIONS.length}
-        aria-valuenow={step + 1}
-      >
+      <div className="questionnaire-head">
         <div
-          className="progress-bar-fill"
-          style={{ width: `${((step + 1) / QUESTIONS.length) * 100}%` }}
-        />
+          className="stairs"
+          role="progressbar"
+          aria-label="Questionnaire progress"
+          aria-valuemin={1}
+          aria-valuemax={QUESTIONS.length}
+          aria-valuenow={step + 1}
+          aria-valuetext={`Question ${step + 1} of ${QUESTIONS.length}`}
+        >
+          {QUESTIONS.map((_, index) => (
+            <span
+              key={index}
+              className={index <= step ? "is-done" : undefined}
+              style={{ height: `${((index + 2) / (QUESTIONS.length + 1)) * 100}%` }}
+            />
+          ))}
+        </div>
+        <p>
+          {step + 1} of {QUESTIONS.length}
+          <span className="questionnaire-head-note"> &middot; skip anything you like</span>
+        </p>
       </div>
 
-      <fieldset className="question" disabled={disabled}>
+      <fieldset key={step} className="question" disabled={disabled}>
         <legend>{question.title}</legend>
         <p className="question-hint">{question.hint}</p>
 
@@ -155,7 +161,7 @@ export default function Questionnaire({ onSubmit, disabled }: Props) {
             maxLength={MAX_ABOUT_LENGTH}
             rows={4}
             aria-label={question.title}
-            placeholder="For example: I'm a economics major who's interested in history, and I'd like research experience."
+            placeholder="For example: I'm an economics major who's interested in history, and I'd like research experience."
           />
         ) : (
           <div className="options">
@@ -193,11 +199,11 @@ export default function Questionnaire({ onSubmit, disabled }: Props) {
       <div className="questionnaire-nav">
         <button
           type="button"
-          className="button"
+          className="button button-quiet"
           onClick={() => setStep(step - 1)}
           disabled={step === 0 || disabled}
         >
-          Previous
+          <span aria-hidden="true">&larr;</span> Back
         </button>
         <button
           type="button"
@@ -213,7 +219,10 @@ export default function Questionnaire({ onSubmit, disabled }: Props) {
           onClick={() => goNext(answers)}
           disabled={disabled}
         >
-          {isLast ? "Find opportunities" : "Continue"}
+          {isLast ? "Find opportunities" : "Continue"}{" "}
+          <span className="arrow" aria-hidden="true">
+            &rarr;
+          </span>
         </button>
       </div>
     </section>

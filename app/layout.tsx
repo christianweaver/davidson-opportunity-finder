@@ -1,29 +1,29 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Bricolage_Grotesque, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 
-const serif = Fraunces({
+const display = Bricolage_Grotesque({
   subsets: ["latin"],
-  axes: ["SOFT", "opsz"],
-  variable: "--font-serif",
+  axes: ["opsz"],
+  variable: "--font-display",
   display: "swap",
 });
 
-const sans = Inter({
+const sans = Instrument_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Davidson Opportunity Finder",
+  title: "NextStep",
   description:
-    "Find Davidson College grants and opportunities that fit your interests and goals.",
+    "Find Davidson College grants, research, internships, and programs that fit your interests and goals.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+    <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <body>{children}</body>
     </html>
   );

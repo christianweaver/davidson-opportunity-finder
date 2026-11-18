@@ -1,6 +1,5 @@
-import type { CSSProperties } from "react";
 import type { OpportunityCard } from "@/lib/finder";
-import { matchLabel, sourceLabel, usesDatabaseOnly } from "@/lib/format";
+import { matchLabel, matchLevel, sourceLabel, usesDatabaseOnly } from "@/lib/format";
 
 type Props = {
   card: OpportunityCard;
@@ -8,21 +7,26 @@ type Props = {
 };
 
 export default function GrantCard({ card, onLearnMore }: Props) {
-  const shade = { "--match-strength": card.score / 100 } as CSSProperties;
-
   return (
-    <article className="grant-card" data-source={usesDatabaseOnly(card) ? "database" : "website"} style={shade}>
-      <p className="match-pill">{matchLabel(card.score)}</p>
+    <article className="grant-card" data-source={usesDatabaseOnly(card) ? "database" : "website"}>
+      <p className="match" data-level={matchLevel(card.score)}>
+        <span className="match-meter" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </span>
+        {matchLabel(card.score)}
+      </p>
       <h3>{card.name}</h3>
       <p className="grant-reason">{card.reason}</p>
       <p className="grant-source">{sourceLabel(card)}</p>
       <div className="grant-actions">
         <button type="button" className="button button-primary button-small" onClick={onLearnMore}>
-          Learn more
+          Learn more <span className="arrow" aria-hidden="true">&rarr;</span>
         </button>
         {card.sourceUrl && (
           <a className="link" href={card.sourceUrl} target="_blank" rel="noopener noreferrer">
-            Official page
+            Official page <span aria-hidden="true">&#8599;</span>
           </a>
         )}
       </div>

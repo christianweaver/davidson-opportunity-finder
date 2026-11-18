@@ -130,7 +130,7 @@ export async function readPage(rawUrl: string): Promise<ReadResult> {
 
   try {
     const response = await fetch(url, {
-      headers: { "User-Agent": "DavidsonOpportunityFinder/0.1 (student project)" },
+      headers: { "User-Agent": "NextStep/0.1 (student project)" },
       signal: AbortSignal.timeout(TIMEOUT_MS),
     });
 
